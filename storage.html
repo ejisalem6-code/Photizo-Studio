@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#6a4a00","on-primary-fixed":"#271900","primary-fixed":"#ffdea8","surface-container-high":"#262a33","primary":"#ffda9c","on-surface":"#dfe2ee","surface-container-lowest":"#0a0e16","primary-container":"#f5b942","on-secondary-fixed-variant":"#6e3900","on-secondary-container":"#432100","on-tertiary-fixed":"#001c39","background":"#0f131c","outline-variant":"#504535","secondary-fixed":"#ffdcc3","on-secondary-fixed":"#2f1500","secondary-fixed-dim":"#ffb77d","tertiary-container":"#9dc5ff","surface-container":"#1c2028","secondary":"#ffb77d","on-background":"#dfe2ee","surface-dim":"#0f131c","on-tertiary":"#00315d","tertiary-fixed-dim":"#a4c9ff","tertiary-fixed":"#d4e3ff","on-surface-variant":"#d4c4af","on-primary":"#422d00","tertiary":"#cde0ff","error-container":"#93000a","surface-bright":"#353942","on-tertiary-fixed-variant":"#004883","on-error":"#690005","on-secondary":"#4d2600","on-primary-fixed-variant":"#5e4200","surface-container-low":"#181c24","surface-container-highest":"#31353e","outline":"#9c8f7b","error":"#ffb4ab","on-error-container":"#ffdad6","surface-variant":"#31353e","secondary-container":"#d97707","inverse-surface":"#dfe2ee","primary-fixed-dim":"#f9bc45","inverse-primary":"#7c5800","surface-tint":"#f9bc45","inverse-on-surface":"#2c3039","surface":"#0f131c","on-tertiary-container":"#005193"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"panel-width-inspector":"20rem","space-base":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-3xl":"4rem","space-4xl":"6rem","space-md":"0.75rem","space-2xs":"0.125rem","panel-width-media":"18rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-2xl":"3rem","space-sm":"0.5rem","space-xl":"2rem"},fontFamily:{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"],"display-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"code-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"400"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.4)] z-50 flex flex-col justify-between p-space-base"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs py-space-xs"><img alt="Brand logo. - Primary color: #f5b942
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Photizo</span><span class="font-label-sm text-label-sm text-secondary leading-none mt-space-2xs uppercase tracking-wider">Studio Suite</span></div></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg" data-path="dashboard" href="dashboard.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="">Home</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="editor" href="editor.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">movie_edit</span><span class="">Editor</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="templates" href="templates.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">auto_awesome_motion</span><span class="">Templates</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_2px_12px_rgba(245,185,66,0.25)]" data-active="true" data-path="photizo-space" href="storage.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">cloud_circle</span><span class="">Photizo Space</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="pcdl-hub" href="pcdl-hub.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">local_library</span><span class="">PCDL Hub</span></div><span class="material-symbols-outlined text-primary text-[18px] drop-shadow-[0_0_8px_rgba(245,185,66,0.35)]">lock</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reels" href="reels.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">play_circle</span><span class="">Reels</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="community" href="community.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">diversity_3</span><span>Community</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="notifications" href="notifications.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="">Notifications</span></div><span class="h-5 w-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-label-sm font-bold">3</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant">Cloud Storage</span><span class="text-primary font-code-sm text-code-sm">68.4 / 100 GB</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full w-[68%]"></div></div></div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="workspace-settings" href="settings.html"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">Workspace Settings</span></a><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_4px_20px_-2px_rgba(245,185,66,0.35)] hover:bg-primary transition-colors" data-path="pricing-upgrade" href="upgrade.html"><span class="material-symbols-outlined text-[18px]">flare</span><span class="">Upgrade to Radiant</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #f5b942
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="relative w-96 flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full h-9 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search projects, templates, PCDL scriptures, media assets... /" type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[16px]">cloud_done</span><span class="">Photizo Cloud: Synced</span></div><button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button"><span class="material-symbols-outlined text-tertiary-container text-[18px]">auto_awesome</span><span class="">Pleroma AI</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container ring-2 ring-surface"></span></button><a class="hover:opacity-80 transition-opacity cursor-pointer" href="profile.html"><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col items-end"><span class="font-label-lg text-label-lg text-on-surface leading-none">Minister David O.</span><span class="flex items-center gap-space-2xs mt-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary"><span class="material-symbols-outlined text-[14px]">stars</span>Radiant Member</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(245,185,66,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></a></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Active Sidebar Nav Sync Script -->
+<script>
+    (function () {
+      const activePath = 'photizo-space';
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach((link) => {
+        if (link.getAttribute('data-path') === activePath) {
+          link.className =
+            'flex items-center justify-between px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_2px_12px_rgba(245,185,66,0.25)]';
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.className = 'material-symbols-outlined text-[20px]';
+        }
+      });
+    })();
+  </script>
+<!-- Ambient Golden Atmospheric Glow (Layered) -->
+<div class="relative w-full overflow-hidden px-space-xl py-space-xl">
+<div class="pointer-events-none absolute -top-40 right-1/4 h-96 w-96 rounded-full bg-primary-container/10 blur-[120px]"></div>
+<div class="pointer-events-none absolute top-1/2 -left-20 h-80 w-80 rounded-full bg-secondary-container/10 blur-[100px]"></div>
+<!-- Header Section -->
+<div class="relative z-10 flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm tracking-widest uppercase font-bold">Cloud Asset Vault</span>
+<span class="flex items-center gap-1 text-on-surface-variant font-code-sm text-code-sm">
+<span class="h-1.5 w-1.5 rounded-full bg-primary-container animate-pulse"></span>
+              Pleroma L1 Caching Active
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Photizo Space Cloud Vault
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">Secure, zero-loss cloud asset vault with Pleroma AI luminescence caching and multi-tier synchronization across PCDL nodes.</p>
+</div>
+<!-- Top Actions -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors font-label-lg text-label-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="">Batch Download</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors font-label-lg text-label-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">sync</span>
+<span class="">Sync PCDL Library</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_4px_20px_-2px_rgba(245,185,66,0.35)] hover:bg-primary transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+<span class="">+ Upload Files / Folders</span>
+</button>
+</div>
+</div>
+<!-- Storage Breakdown Bento Row -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Main Storage Gauge Card (8 Cols) -->
+<div class="xl:col-span-8 relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between gap-space-lg">
+<div class="absolute top-0 right-0 w-80 h-40 bg-gradient-to-bl from-primary-container/10 via-transparent to-transparent pointer-events-none"></div>
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+                Active Tier Allocation
+              </span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-lg text-display-lg text-on-surface leading-none font-bold">
+                  68.4
+                </span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">
+                  / 100 GB
+                </span>
+<span class="ml-space-sm px-space-xs py-space-2xs rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">
+                  Radiant Plan
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span class="">Zero-Loss Cloud Redundancy: 100% Verified</span>
+</div>
+</div>
+<!-- Segmented Progress Bar -->
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-3 bg-surface-container-lowest rounded-full overflow-hidden flex p-0.5 gap-0.5">
+<!-- 4K Video Masters (34.2%) -->
+<div class="h-full bg-primary-container rounded-l-full transition-all hover:brightness-110" style="width: 34.2%;" title="4K Video Masters: 34.2 GB"></div>
+<!-- Audio Stems (16.8%) -->
+<div class="h-full bg-tertiary-container transition-all hover:brightness-110" style="width: 16.8%;" title="Audio Stems &amp; Choirs: 16.8 GB"></div>
+<!-- Vector Emblems (9.4%) -->
+<div class="h-full bg-secondary transition-all hover:brightness-110" style="width: 9.4%;" title="Vector Emblems &amp; Motion: 9.4 GB"></div>
+<!-- Sermon Transcripts (4.6%) -->
+<div class="h-full bg-primary-fixed transition-all hover:brightness-110" style="width: 4.6%;" title="Sermon Transcripts &amp; Docs: 4.6 GB"></div>
+<!-- Available (35.0%) -->
+<div class="h-full bg-surface-container-highest/60 rounded-r-full flex-1" title="Available Free Space: 31.6 GB"></div>
+</div>
+<!-- Legend -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-sm pt-space-xs font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="text-on-surface">Video Masters</span>
+<span class="font-code-sm text-on-surface-variant">34.2 GB</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="text-on-surface">Audio Stems</span>
+<span class="font-code-sm text-on-surface-variant">16.8 GB</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface">Vector Emblems</span>
+<span class="font-code-sm text-on-surface-variant">9.4 GB</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed"></span>
+<span class="text-on-surface">Transcripts</span>
+<span class="font-code-sm text-on-surface-variant">4.6 GB</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span class="text-on-surface-variant">Available</span>
+<span class="font-code-sm text-primary font-bold">31.6 GB</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Status Metas (4 Cols) -->
+<div class="xl:col-span-4 grid grid-cols-2 gap-space-md">
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Active Assets</span>
+<span class="material-symbols-outlined text-[18px] text-primary">folder_special</span>
+</div>
+<div class="flex flex-col mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">142</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Across 18 folders</span>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Auto-Sync</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">cloud_sync</span>
+</div>
+<div class="flex flex-col mt-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">Live</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Synced 4m ago</span>
+</div>
+</div>
+<div class="col-span-2 rounded-xl bg-surface-container-low p-space-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">auto_fix_high</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">
+                  Pleroma Smart Clean
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+                  Duplicate frames &amp; 3.2 GB proxy cache safely purgeable
+                </span>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-highest hover:bg-surface-bright text-primary font-label-md text-label-md transition-colors" type="button">
+              Analyze
+            </button>
+</div>
+</div>
+</div>
+<!-- Filter & View Control Bar -->
+<div class="flex flex-col gap-space-md rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">
+              search
+            </span>
+<input class="w-full h-11 pl-11 pr-space-md rounded-lg bg-surface-container text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-high transition-all" placeholder="Filter files, sermon tags, scripture references (e.g., 'John 1:5', 'ProRes', 'PCDL')..." type="text"/>
+</div>
+<!-- Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Sort dropdown mockup -->
+<div class="flex items-center gap-space-xs px-space-md h-11 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="text-on-surface-variant">Sort:</span>
+<span class="font-bold">Recently Modified</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">expand_more</span>
+</div>
+<!-- View toggle -->
+<div class="flex items-center p-1 rounded-lg bg-surface-container">
+<button class="p-space-xs rounded bg-surface-container-high text-primary shadow-sm" id="btn-grid-view" title="Grid View" type="button">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+</button>
+<button class="p-space-xs rounded hover:bg-surface-container-high text-on-surface-variant transition-colors" id="btn-list-view" title="List View" type="button">
+<span class="material-symbols-outlined text-[20px]">view_list</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Media Type Tabs & Filter Chips -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pt-space-xs border-t-0">
+<!-- Asset Category Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<button class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold whitespace-nowrap shadow-sm" type="button">
+              All Assets (142)
+            </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              4K Video &amp; Reels (38)
+            </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Audio Stems (24)
+            </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Vector Emblems (45)
+            </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Sermon Masters (22)
+            </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+              Archives (13)
+            </button>
+</div>
+<!-- Attribute Chips -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">flare</span>
+              Radiant Mastered
+            </span>
+<span class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">offline_pin</span>
+              Offline Cached
+            </span>
+<span class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">menu_book</span>
+              Has Scripture Tags
+            </span>
+</div>
+</div>
+</div>
+<!-- File / Asset Grid (3 Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: 4K Video Master (Rich Photo Preview) -->
+<div class="group relative flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<!-- Thumbnail Area -->
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-highest">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic 4K praise night footage from an auditorium, golden ambient stage lighting with haze, wide lens framing a pastor speaking with expressive hand gestures in an off-white modern suit, dramatic bokeh and radiant amber rim lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGLMYCJe0x5BnL_iv-O3Lu1y29AZdOcaz3LEnVmstortO6slFigMSaFZIhW5czZXeWo2Mqa9uKQyRmc1q5XfE7htou_kODYSyphSIvUwTlv9FBj0Rzs8jHhnPgciOZmAvv4CpC0tTPaeWGYscoy4vJ1mck0xjt2-xVua6YEY4J0cTYldD6asbwZU1bkUO0det4lfEc5TyFJhSOOleO0DFoRJA0f1UPDBJUrF_ZNsYPP5ta_VFQFrRY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-90"></div>
+<!-- Top Floating Badges -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+                Pleroma AI Verified
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-code-sm text-code-sm">
+                4K ProRes HQ
+              </span>
+</div>
+<!-- Quick Action Hover Layer -->
+<div class="absolute inset-0 bg-surface-container-lowest/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-space-sm">
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Open in Editor" type="button">
+<span class="material-symbols-outlined text-[20px]">movie_edit</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Preview Asset" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Download" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Metadata Body -->
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors" title="Praise Night 2025 Recap Master.mov">
+                  Praise Night 2025 Recap Master.mov
+                </h3>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-pointer">
+                  more_vert
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">4K 60FPS • DCI Gamma 2.4 • Main Auditorium Lighting</p>
+</div>
+<!-- Tag Chips & File Info -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">
+                  #John 1:5
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  Keynote
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  Color Scored
+                </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface">8.4 GB</span>
+<span class="">Modified 2h ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Photizo Sacred Covenant Vector (Dark Vector Preview) -->
+<div class="group relative flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<!-- Vector Canvas Alpha Pattern -->
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest flex items-center justify-center p-space-lg">
+<!-- Checkered alpha pattern representation -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffda9c_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-container/5 via-transparent to-primary-container/10 pointer-events-none"></div>
+<!-- Glowing Sacred Emblem SVG -->
+<svg class="w-24 h-24 text-primary-container drop-shadow-[0_0_20px_rgba(245,185,66,0.4)] group-hover:scale-110 transition-transform duration-300" viewbox="0 0 120 120">
+<circle cx="60" cy="60" fill="none" opacity="0.6" r="45" stroke="currentColor" stroke-dasharray="4 2" stroke-width="1.5"></circle>
+<circle cx="60" cy="60" fill="none" r="32" stroke="currentColor" stroke-width="2"></circle>
+<polygon fill="none" points="60,20 72,50 102,60 72,70 60,100 48,70 18,60 48,50" stroke="currentColor" stroke-width="2"></polygon>
+<circle cx="60" cy="60" fill="currentColor" r="6"></circle>
+</svg>
+<!-- Badges -->
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">all_inclusive</span>
+                100% Scalable
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-code-sm text-code-sm">
+                SVG Vector
+              </span>
+</div>
+<!-- Quick Action Hover Layer -->
+<div class="absolute inset-0 bg-surface-container-lowest/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-space-sm">
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Open in Editor" type="button">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Download Vector" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Metadata -->
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors" title="Photizo Covenant Vector.svg">
+                  Photizo Covenant Vector.svg
+                </h3>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-pointer">
+                  more_vert
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+                Infinite Vector • Bézier Light Ray Emblems
+              </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">
+                  Branding
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  Print Ready
+                </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface">14.2 MB</span>
+<span class="">Modified Yesterday</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: PCDL Excerpt Video (With Embedded Image & PCDL Hub Tag) -->
+<div class="group relative flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-highest">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Keynote speech close up portrait on stage under warm spotlight, inspirational pastor holding a microphone with glowing gold bokeh in a dark auditorium background, wearing a tailored cream turtleneck suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNH5CFK4KH_sNKnsP_cCqQfBz2E33xONUsn1hZWU9IiB2LP7-rFpQS9-o61FNE-40q6G8e94E9LPH6l1ukgrwhiZvJiZYjy93wMc6_StbpdEeQMhkFxbv3wPTr0YJjvxZimgO98PLH5hG2-HnCH7iA27kFgYWHhRjly2neeZNzKtTeMjVF4b-DCu8n0aq54pPJIMhVGaxurWV0LAo0aF-1xOymtjIflb5wI6YnRkuF27Wzf3wAnb0Z"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-90"></div>
+<!-- PCDL Logo Badge -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur-md shadow-md">
+<img alt="PCDL Hub Logo" class="w-4 h-4 rounded object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WBcJvz6MgC9w8XI5PNk7POFjJqy87YCEZJNs4vqxyHxsdPWbZlcuaYXptorKoBZTxjyICOdm1nW3f3hRHIbbChDsbXNUyxdgyudar9dXt_pOSeZKY68m2j_3ybRKaPnqeOyGw9_yCGyQ7jfx06OORM16GAb7rnGy9PkoMXlKI690HofivU9tcc7z09nIKNQLWypYywgkR_P1m7N8TcUSF7bB7Jb9SxU9O4K2EJ-R6I4xS7ZLHe3iYSKa4"/>
+<span class="text-tertiary font-label-sm text-label-sm font-bold">
+                  PCDL Synced
+                </span>
+</div>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-code-sm text-code-sm">
+                1080p DCI
+              </span>
+</div>
+<!-- Quick Action Hover Layer -->
+<div class="absolute inset-0 bg-surface-container-lowest/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-space-sm">
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Play Video" type="button">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Send to Reels" type="button">
+<span class="material-symbols-outlined text-[20px]">forward</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors" title="Pastor Chris Excerpt - Faith in Focus.mp4">
+                  Pastor Chris Excerpt - Faith in Focus.mp4
+                </h3>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-pointer">
+                  more_vert
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+                PCDL Hub Official Excerpt • English (Stereo 320k)
+              </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary-container font-label-sm text-label-sm">
+                  #Hebrews 11:1
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  PCDL Archive
+                </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface">2.1 GB</span>
+<span class="">Synced 3h ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: Audio Stems (Waveform Visualization) -->
+<div class="group relative flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<!-- Audio Waveform Area -->
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest flex flex-col justify-center items-center px-space-md">
+<div class="absolute inset-0 bg-gradient-to-br from-tertiary-container/5 via-transparent to-transparent pointer-events-none"></div>
+<!-- Waveform Bars -->
+<div class="w-full flex items-center justify-center gap-1 h-20 px-space-sm">
+<div class="w-1 bg-tertiary-container/40 rounded-full h-4"></div>
+<div class="w-1 bg-tertiary-container/60 rounded-full h-8"></div>
+<div class="w-1 bg-tertiary-container rounded-full h-14"></div>
+<div class="w-1 bg-tertiary-container rounded-full h-10"></div>
+<div class="w-1 bg-tertiary-container/70 rounded-full h-16"></div>
+<div class="w-1 bg-primary rounded-full h-20 shadow-[0_0_8px_rgba(245,185,66,0.5)]"></div>
+<div class="w-1 bg-primary rounded-full h-16 shadow-[0_0_8px_rgba(245,185,66,0.5)]"></div>
+<div class="w-1 bg-tertiary-container rounded-full h-12"></div>
+<div class="w-1 bg-tertiary-container/80 rounded-full h-18"></div>
+<div class="w-1 bg-tertiary-container rounded-full h-10"></div>
+<div class="w-1 bg-tertiary-container/50 rounded-full h-6"></div>
+<div class="w-1 bg-tertiary-container/80 rounded-full h-14"></div>
+<div class="w-1 bg-tertiary-container rounded-full h-8"></div>
+<div class="w-1 bg-tertiary-container/40 rounded-full h-4"></div>
+<div class="w-1 bg-tertiary-container/70 rounded-full h-12"></div>
+<div class="w-1 bg-tertiary-container rounded-full h-16"></div>
+<div class="w-1 bg-primary rounded-full h-14"></div>
+<div class="w-1 bg-tertiary-container rounded-full h-8"></div>
+<div class="w-1 bg-tertiary-container/50 rounded-full h-4"></div>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-tertiary-container font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">graphic_eq</span>
+                LMAM Master Verified
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-code-sm text-code-sm">
+                24-bit 96kHz WAV
+              </span>
+</div>
+<!-- Quick Action Hover Layer -->
+<div class="absolute inset-0 bg-surface-container-lowest/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-space-sm">
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Audition Track" type="button">
+<span class="material-symbols-outlined text-[20px]">headphones</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Download Stems" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors" title="Choir Stems &amp; Ambient Strings Multitrack.wav">
+                  Choir Stems &amp; Ambient Strings Multitrack.wav
+                </h3>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-pointer">
+                  more_vert
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+                8 Discrete Stems • Choral Ambience, Strings, Moog Sub
+              </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-label-sm text-label-sm">
+                  Strings
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  Choir
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  Lossless
+                </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface">1.8 GB</span>
+<span class="">Modified 4d ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5: Healing Streams Motion Graphics Lower Thirds -->
+<div class="group relative flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<!-- Motion Graphic Mockup Box -->
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest flex flex-col justify-end p-space-md">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/90 via-surface-container-lowest to-surface-container-lowest"></div>
+<!-- Graphic Preview Representation -->
+<div class="relative z-10 w-full p-2.5 rounded-lg bg-surface-container-high/80 backdrop-blur-md flex items-center justify-between shadow-lg">
+<div class="flex items-center gap-2">
+<div class="w-2 h-8 rounded-full bg-secondary-container"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">
+                    HEALING STREAMS LIVE
+                  </span>
+<span class="text-[10px] text-primary leading-none">Global Miracle Crusade</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">stream</span>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">animation</span>
+                Motion Pack
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-code-sm text-code-sm">
+                12 Alpha Assets
+              </span>
+</div>
+<!-- Quick Action Hover Layer -->
+<div class="absolute inset-0 bg-surface-container-lowest/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-space-sm">
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Extract Pack" type="button">
+<span class="material-symbols-outlined text-[20px]">folder_zip</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Download" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors" title="Healing Streams Miracle Crusade Lower-Thirds.zip">
+                  Healing Streams Miracle Crusade Lower-Thirds.zip
+                </h3>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-pointer">
+                  more_vert
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+                Alpha Channel MOV • 60 FPS Transparent Broadcast Overlays
+              </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">
+                  Live Broadcast
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  Alpha
+                </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface">4.2 GB</span>
+<span class="">Modified 1w ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6: Prophetic Word 2025 Keynote Flyer PSD -->
+<div class="group relative flex flex-col rounded-xl bg-surface-container-low overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<!-- Print Flyer Mockup -->
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest flex items-center justify-center p-space-sm">
+<div class="w-32 h-44 rounded bg-surface-container-high shadow-xl p-2 flex flex-col justify-between border-0 transform rotate-1 group-hover:rotate-0 transition-transform">
+<div class="flex justify-between items-center text-[8px] text-primary">
+<span class="">YEAR OF GLORY</span>
+<span class="">2025</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-display-lg text-primary leading-none text-[16px] font-extrabold">
+                  PROPHETIC
+                </span>
+<span class="text-[9px] text-on-surface tracking-widest uppercase">Keynote</span>
+</div>
+<div class="h-1 w-full bg-primary-container rounded"></div>
+</div>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">palette</span>
+                300 DPI CMYK
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-code-sm text-code-sm">
+                PSD Master
+              </span>
+</div>
+<!-- Quick Action Hover Layer -->
+<div class="absolute inset-0 bg-surface-container-lowest/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-space-sm">
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Open Master PSD" type="button">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-lg hover:scale-110 transition-transform" title="Download" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors" title="Prophetic Word 2025 Keynote Flyer.psd">
+                  Prophetic Word 2025 Keynote Flyer.psd
+                </h3>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant cursor-pointer">
+                  more_vert
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+                High-Res Print Master • Vector Smart Objects • CMYK Scored
+              </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">
+                  Print
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  A2 Poster
+                </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface">380 MB</span>
+<span class="">Modified 2w ago</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Two-Stage Safe Purge Trash Sanctuary Drawer Section -->
+<div class="mt-space-xl rounded-xl bg-surface-container-low p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-16 -bottom-16 w-64 h-64 rounded-full bg-secondary-container/5 blur-3xl pointer-events-none"></div>
+<!-- Banner Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">delete_sweep</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Safe Deletion Vault</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                  4 items • 1.4 GB
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Two-Stage Safe Purge Guarantee: Deleted items remain safely restorable for 30 days. No accidental loss of ministry assets.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">restore</span>
+<span class="">Restore All</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-on-surface-variant font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="">Empty Trash (Requires Re-auth)</span>
+</button>
+</div>
+</div>
+<!-- Staged Trash Items List -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-sm pt-space-xs">
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high/60 text-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm truncate min-w-0">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">draft</span>
+<div class="flex flex-col truncate">
+<span class="truncate text-on-surface font-label-md text-label-md">
+                  Rough_Cut_Promo_v1.mp4
+                </span>
+<span class="text-[11px] text-on-surface-variant">740 MB • 28 days left</span>
+</div>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Restore Item" type="button">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high/60 text-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm truncate min-w-0">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">audio_file</span>
+<div class="flex flex-col truncate">
+<span class="truncate text-on-surface font-label-md text-label-md">
+                  Rehearsal_MicCheck_Take2.wav
+                </span>
+<span class="text-[11px] text-on-surface-variant">320 MB • 28 days left</span>
+</div>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Restore Item" type="button">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+</button>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high/60 text-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm truncate min-w-0">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">image</span>
+<div class="flex flex-col truncate">
+<span class="truncate text-on-surface font-label-md text-label-md">
+                  Banner_Old_Logo_Test.png
+                </span>
+<span class="text-[11px] text-on-surface-variant">240 MB • 29 days left</span>
+</div>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Restore Item" type="button">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+</button>
+</div>
+<!-- Item 4 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high/60 text-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm truncate min-w-0">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">description</span>
+<div class="flex flex-col truncate">
+<span class="truncate text-on-surface font-label-md text-label-md">
+                  Order_of_Service_OldDraft.pdf
+                </span>
+<span class="text-[11px] text-on-surface-variant">100 MB • 30 days left</span>
+</div>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Restore Item" type="button">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div>
+<script defer="" src="assets/site.js"></script></body></html>

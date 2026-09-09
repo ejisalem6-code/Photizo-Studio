@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#6a4a00","on-primary-fixed":"#271900","primary-fixed":"#ffdea8","surface-container-high":"#262a33","primary":"#ffda9c","on-surface":"#dfe2ee","surface-container-lowest":"#0a0e16","primary-container":"#f5b942","on-secondary-fixed-variant":"#6e3900","on-secondary-container":"#432100","on-tertiary-fixed":"#001c39","background":"#0f131c","outline-variant":"#504535","secondary-fixed":"#ffdcc3","on-secondary-fixed":"#2f1500","secondary-fixed-dim":"#ffb77d","tertiary-container":"#9dc5ff","surface-container":"#1c2028","secondary":"#ffb77d","on-background":"#dfe2ee","surface-dim":"#0f131c","on-tertiary":"#00315d","tertiary-fixed-dim":"#a4c9ff","tertiary-fixed":"#d4e3ff","on-surface-variant":"#d4c4af","on-primary":"#422d00","tertiary":"#cde0ff","error-container":"#93000a","surface-bright":"#353942","on-tertiary-fixed-variant":"#004883","on-error":"#690005","on-secondary":"#4d2600","on-primary-fixed-variant":"#5e4200","surface-container-low":"#181c24","surface-container-highest":"#31353e","outline":"#9c8f7b","error":"#ffb4ab","on-error-container":"#ffdad6","surface-variant":"#31353e","secondary-container":"#d97707","inverse-surface":"#dfe2ee","primary-fixed-dim":"#f9bc45","inverse-primary":"#7c5800","surface-tint":"#f9bc45","inverse-on-surface":"#2c3039","surface":"#0f131c","on-tertiary-container":"#005193"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"panel-width-inspector":"20rem","space-base":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-3xl":"4rem","space-4xl":"6rem","space-md":"0.75rem","space-2xs":"0.125rem","panel-width-media":"18rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-2xl":"3rem","space-sm":"0.5rem","space-xl":"2rem"},fontFamily:{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"],"display-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"code-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"400"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.4)] z-50 flex flex-col justify-between p-space-base"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs py-space-xs"><img alt="Brand logo. - Primary color: #f5b942
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Photizo</span><span class="font-label-sm text-label-sm text-secondary leading-none mt-space-2xs uppercase tracking-wider">Studio Suite</span></div></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg" data-path="dashboard" href="dashboard.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="">Home</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-active="true" data-path="editor" href="editor.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">movie_edit</span><span class="">Editor</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="templates" href="templates.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">auto_awesome_motion</span><span class="">Templates</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="photizo-space" href="storage.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">cloud_circle</span><span class="">Photizo Space</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="pcdl-hub" href="pcdl-hub.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">local_library</span><span class="">PCDL</span></div><span class="material-symbols-outlined text-primary text-[18px] drop-shadow-[0_0_8px_rgba(245,185,66,0.35)]">lock</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reels" href="reels.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">play_circle</span><span class="">Reels</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="community" href="community.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">diversity_3</span><span>Community</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="notifications" href="notifications.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="">Notifications</span></div><span class="h-5 w-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-label-sm font-bold">3</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant">Cloud Storage</span><span class="text-primary font-code-sm text-code-sm">68.4 / 100 GB</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full w-[68%]"></div></div></div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="workspace-settings" href="settings.html"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">Workspace Settings</span></a><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_4px_20px_-2px_rgba(245,185,66,0.35)] hover:bg-primary transition-colors" data-path="pricing-upgrade" href="upgrade.html"><span class="material-symbols-outlined text-[18px]">flare</span><span class="">Upgrade to Radiant</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #f5b942
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="relative w-96 flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full h-9 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search projects, templates, PCDL scriptures, media assets... /" type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[16px]">cloud_done</span><span class="">Photizo Cloud: Synced</span></div><button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button"><span class="material-symbols-outlined text-tertiary-container text-[18px]">auto_awesome</span><span class="">Pleroma AI</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container ring-2 ring-surface"></span></button><a class="hover:opacity-80 transition-opacity cursor-pointer" href="profile.html"><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col items-end"><span class="font-label-lg text-label-lg text-on-surface leading-none">Showers Faah</span><span class="flex items-center gap-space-2xs mt-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary"><span class="material-symbols-outlined text-[14px]">stars</span>Radiant Member</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(245,185,66,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></a></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Studio Editor Sub-Bar / High-Density Top Navigation -->
+<header class="w-full bg-surface-container-low px-space-lg py-space-sm flex flex-wrap items-center justify-between gap-space-md shadow-md"><!-- Left Group: Mode Switcher & Vector Project Title -->
+<div class="flex items-center gap-space-md min-w-0 flex-wrap">
+<!-- Mode Switcher Pill Segmented Control -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl ring-1 ring-surface-container-highest shrink-0 shadow-inner">
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-label-sm text-[12px]" type="button">
+<span class="material-symbols-outlined text-[16px]">movie_edit</span>
+<span class="">Video Edit</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all font-label-sm text-[12px]" type="button">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span class="">Photo Retouch</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-[12px] font-bold shadow-sm ring-1 ring-primary/30 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">draw</span>
+<span class="">Logo Design (Vector)</span>
+</button>
+</div>
+<div class="h-6 w-px bg-surface-container-highest hidden sm:block"></div>
+<!-- Project Title & Vector Attributes -->
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]">token</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate cursor-pointer hover:text-primary transition-colors">
+          Photizo Studio — Brand Emblem &amp; Identity (Vector Master)
+        </h1>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] hover:text-on-surface cursor-pointer">edit</span>
+</div>
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-on-surface-variant">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-primary font-bold">SVG / CMYK &amp; RGB</span>
+<span class="">•</span>
+<span class="text-on-surface-variant">Infinite Vector Canvas</span>
+<span class="">•</span>
+<div class="flex items-center gap-1.5 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm">Synced PCDL (Just now)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Center Group: Vector Calibration & Alignment Tools -->
+<div class="hidden lg:flex items-center gap-space-xs bg-surface-container rounded-xl p-space-2xs">
+<div class="flex items-center gap-1 px-space-sm py-space-2xs text-on-surface font-label-sm text-label-sm rounded-lg bg-surface-container-high cursor-pointer hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">search</span>
+<span class="">Zoom: 100% (Vector Crisp)</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</div>
+<button class="flex items-center gap-1 px-space-sm py-space-2xs text-primary bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors font-label-sm text-label-sm" title="Toggle Pixel Grid &amp; Guides" type="button">
+<span class="material-symbols-outlined text-[16px]">grid_on</span>
+<span class="">Guides On</span>
+</button>
+<button class="flex items-center gap-1 px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" title="Toggle Alpha Checkerboard" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">blur_on</span>
+<span class="">Alpha 100%</span>
+</button>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors" title="Safe Margins: Circle &amp; Square App Icon Margins" type="button">
+<span class="material-symbols-outlined text-[18px]">center_focus_strong</span>
+</button>
+</div>
+<!-- Right Group: Live Collaborator & Vector Export Dropdown -->
+<div class="flex items-center gap-space-sm">
+<button class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">cloud_sync</span>
+<span class="">Sync to PCDL Brand Assets</span>
+</button>
+<!-- Live Collaborator Avatar Pill -->
+<div class="flex items-center gap-2 bg-surface-container px-space-sm py-space-2xs rounded-full">
+<div class="relative">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-[10px]">
+        SK
+      </div>
+<span class="absolute -bottom-0.5 -right-0.5 w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface hidden xl:inline">Sister Sowers</span>
+</div>
+<!-- Export Radiant Vector Button with Multi-format Options -->
+<div class="relative group flex items-center shadow-lg">
+<button class="flex items-center gap-space-xs px-space-lg py-space-xs rounded-l-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-lg text-label-lg font-bold transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="">Export Vector</span>
+</button>
+<button class="px-space-xs py-space-xs rounded-r-lg bg-primary hover:bg-primary-fixed text-on-primary-container transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_drop_down</span>
+</button>
+<!-- Export Formats Flyout Menu -->
+<div class="hidden group-hover:flex flex-col absolute right-0 top-full mt-1 w-64 bg-surface-container-high rounded-xl p-1.5 shadow-2xl ring-1 ring-surface-container-highest z-50 divide-y divide-surface-container-highest">
+<div class="p-1 flex flex-col gap-0.5">
+<button class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-left hover:bg-surface-container font-label-sm text-label-sm text-on-surface transition-colors" type="button">
+<span class="flex items-center gap-2 font-semibold"><span class="material-symbols-outlined text-primary text-[16px]">polyline</span>Export SVG (Scalable Vector)</span>
+<span class="text-[10px] text-primary font-code-sm font-bold">PRO</span>
+</button>
+<button class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-left hover:bg-surface-container font-label-sm text-label-sm text-on-surface transition-colors" type="button">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">image</span>Export Transparent PNG</span>
+<span class="text-[10px] text-on-surface-variant font-code-sm">300 DPI / 4K</span>
+</button>
+<button class="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-left hover:bg-surface-container font-label-sm text-label-sm text-on-surface transition-colors" type="button">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary text-[16px]">photo_size_select_actual</span>Export WebP (Alpha)</span>
+<span class="text-[10px] text-on-surface-variant font-code-sm">Ultra-Compressed</span>
+</button>
+</div>
+<div class="p-1">
+<button class="w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-left hover:bg-surface-container font-label-sm text-label-sm text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">cloud_upload</span>
+<span class="">Push to PCDL Brand Assets Library</span>
+</button>
+</div>
+</div>
+</div>
+</div></header>
+<!-- Workspace Main Split: Left Tool Rail + Canvas + Timeline + Right AI Inspector -->
+<div class="w-full flex flex-col xl:flex-row h-[calc(100vh-8.5rem)] min-h-[760px] overflow-hidden bg-surface-container-lowest">
+<!-- LEFT TOOL RAIL (Non-Linear Editor Tool Ribbon) -->
+<aside class="w-full xl:w-16 bg-surface-container-low flex xl:flex-col items-center justify-between p-space-xs z-30 shrink-0 overflow-x-auto xl:overflow-visible"><div class="flex xl:flex-col items-center gap-space-xs w-full">
+<!-- Select / Direct Selection -->
+<button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg group transition-colors" title="Direct Select Anchor Tool (A)" type="button">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+<span class="hidden group-hover:block absolute left-full ml-2 px-2 py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-lg whitespace-nowrap z-50">Direct Node Select (A)</span>
+</button>
+<!-- Vector Pen / Bezier Tool (ACTIVE) -->
+<button class="relative p-space-sm bg-surface-container-high text-primary rounded-lg group shadow-md" title="Vector Pen &amp; Bezier Anchor Tool (P)" type="button">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary-container rounded-r"></div>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">draw</span>
+<span class="hidden group-hover:block absolute left-full ml-2 px-2 py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-lg whitespace-nowrap z-50">Vector Pen (P)</span>
+</button>
+<!-- Geometric Shapes (Crosses, Shields, Rings, Starbursts) -->
+<button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg group transition-colors" title="Shapes &amp; Badges (U)" type="button">
+<span class="material-symbols-outlined text-[20px]">interests</span>
+<span class="hidden group-hover:block absolute left-full ml-2 px-2 py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-lg whitespace-nowrap z-50">Shapes &amp; Badges (U)</span>
+</button>
+<!-- Typography & Curved Text Path -->
+<button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg group transition-colors" title="Curved Text &amp; Arc Typography (T)" type="button">
+<span class="material-symbols-outlined text-[20px]">text_fields</span>
+<span class="hidden group-hover:block absolute left-full ml-2 px-2 py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-lg whitespace-nowrap z-50">Curved Wordmark (T)</span>
+</button>
+<!-- Boolean Shape Ops (Unite, Subtract, Intersect) -->
+<button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg group transition-colors" title="Boolean Path Operations" type="button">
+<span class="material-symbols-outlined text-[20px]">join_inner</span>
+<span class="hidden group-hover:block absolute left-full ml-2 px-2 py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-lg whitespace-nowrap z-50">Boolean Pathfinder</span>
+</button>
+<!-- Emblem Gradient Mesh & Radiant Glow -->
+<button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg group transition-colors" title="Radiant Gold Gradient Mesh (G)" type="button">
+<span class="material-symbols-outlined text-[20px]">gradient</span>
+<span class="hidden group-hover:block absolute left-full ml-2 px-2 py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-lg whitespace-nowrap z-50">Radiant Gradient Mesh (G)</span>
+</button>
+<!-- Vector Alignment & Symmetry Guides -->
+<button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg group transition-colors" title="Vector Symmetry &amp; Dynamic Guides" type="button">
+<span class="material-symbols-outlined text-[20px]">align_horizontal_center</span>
+<span class="hidden group-hover:block absolute left-full ml-2 px-2 py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-lg whitespace-nowrap z-50">Dynamic Symmetry</span>
+</button>
+<!-- Pleroma Vector Radiance Glow Engine -->
+<button class="relative p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg group transition-colors" title="Pleroma Luminescence Shader" type="button">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span class="hidden group-hover:block absolute left-full ml-2 px-2 py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded shadow-lg whitespace-nowrap z-50">Pleroma Glow Shader</span>
+</button>
+</div>
+<!-- Rail Footer Tools: Vector Template Presets & Layers -->
+<div class="flex xl:flex-col items-center gap-space-xs">
+<button class="p-space-sm text-primary hover:text-primary-fixed bg-surface-container hover:bg-surface-container-high rounded-lg transition-colors" title="Logo Emblem Templates Library" type="button">
+<span class="material-symbols-outlined text-[20px]">auto_awesome_motion</span>
+</button>
+<button class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" title="Canvas &amp; Snapping Preferences" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div></aside>
+<!-- CENTER SECTION: Canvas Viewport (Top) + Multi-track NLE Timeline (Bottom) -->
+<section class="flex-1 flex flex-col min-w-0 bg-surface-container-lowest overflow-hidden"><!-- TOP SUB-BAR: Vector Template Presets Bar with "Logo" Tab active alongside Video, Photo, Reels -->
+<div class="bg-surface-container-low px-space-md py-space-xs flex items-center justify-between border-b border-surface-container-highest overflow-x-auto gap-space-md">
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-sm text-[11px] text-on-surface-variant font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[15px]">collections_bookmark</span>
+<span class="">Templates:</span>
+</span>
+<!-- Category Tabs -->
+<div class="flex items-center bg-surface-container-lowest p-0.5 rounded-lg ring-1 ring-surface-container-highest">
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-[11px] font-bold shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[13px]">token</span>
+<span class="">Logos &amp; Emblems</span>
+</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-[11px] transition-colors" type="button">
+        Video Intros
+      </button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-[11px] transition-colors" type="button">
+        Photo Covers
+      </button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-[11px] transition-colors" type="button">
+        Reels Lower-Thirds
+      </button>
+</div>
+</div>
+<!-- Sample Quick-Load Logo Templates -->
+<div class="flex items-center gap-2 shrink-0 overflow-x-auto">
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container ring-1 ring-primary/40 text-primary hover:bg-surface-container-high transition-all text-left font-label-sm text-[11px]" type="button"><span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="font-bold">Cross Crest</span>
+<span class="text-[9px] px-1 bg-surface-container-highest rounded text-on-surface-variant">15% Royalty</span></button>
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all text-left font-label-sm text-[11px]" type="button">
+<span class="material-symbols-outlined text-[14px] text-secondary">flare</span>
+<span class="">Radiant Dove Emblem</span>
+</button>
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all text-left font-label-sm text-[11px]" type="button"><span class="material-symbols-outlined text-[14px] text-tertiary">auto_awesome</span>
+<span class="">Kingdom Praise Wordmark</span></button>
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all text-left font-label-sm text-[11px]" type="button">
+<span class="material-symbols-outlined text-[14px] text-primary">shield</span>
+<span class="">PCDL Conference Badge</span>
+</button>
+</div>
+</div>
+<!-- MAIN VECTOR CANVAS (Transparent Obsidian Checkerboard & Bezier Transform Handles) -->
+<div class="flex-1 relative flex items-center justify-center p-space-md bg-surface overflow-hidden select-none">
+<!-- Subtle Ambient Glow -->
+<div class="absolute w-[640px] h-[360px] bg-primary/10 rounded-full blur-3xl pointer-events-none -translate-y-4"></div>
+<!-- Central Vector Canvas Frame (Simulating Luxury Dark Alpha Checkerboard) -->
+<div class="relative w-full max-w-4xl h-[480px] rounded-xl shadow-2xl overflow-hidden flex items-center justify-center ring-1 ring-surface-container-highest" style="background-color: #121620; background-image: linear-gradient(45deg, #181c26 25%, transparent 25%), linear-gradient(-45deg, #181c26 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #181c26 75%), linear-gradient(-45deg, transparent 75%, #181c26 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px;">
+<!-- Safe Margins HUD: App Icon Circle & Square Bounding Guides -->
+<div class="absolute inset-12 border border-dashed border-primary/30 rounded-full pointer-events-none flex items-center justify-center">
+<div class="w-full h-full border border-primary/20 rounded-2xl"></div>
+<span class="absolute top-2 font-code-sm text-[10px] text-primary/60 tracking-wider">APP ICON SAFE AREA (512×512)</span>
+</div>
+<!-- Top-Left Vector Info HUD -->
+<div class="absolute top-space-md left-space-md flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface/80 backdrop-blur-md text-on-surface shadow-md font-code-sm text-code-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-bold text-primary">VECTOR MASTER</span>
+<span class="text-on-surface-variant">|</span>
+<span class="">Path Nodes: 48</span>
+<span class="text-on-surface-variant">|</span>
+<span class="text-primary font-semibold">Infinite Scale / Anti-Aliased</span>
+</div>
+<!-- Top-Right Transform Coordinates HUD -->
+<div class="absolute top-space-md right-space-md flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface/90 backdrop-blur-md shadow-md font-code-sm text-[11px]">
+<span class="text-on-surface-variant">W:</span>
+<span class="text-primary font-bold">512.00px</span>
+<span class="text-on-surface-variant ml-1">H:</span>
+<span class="text-primary font-bold">512.00px</span>
+<span class="text-on-surface-variant ml-1">Rot:</span>
+<span class="text-primary font-bold">0.0°</span>
+</div>
+<!-- ACTIVE VECTOR EMBLEM ARTWORK & BEZIER BOUNDING BOX -->
+<div class="relative flex flex-col items-center justify-center p-8 ring-2 ring-primary ring-offset-2 ring-offset-surface/80 rounded-lg shadow-[0_0_24px_rgba(245,185,66,0.35)]">
+<!-- Corner Transform Anchors -->
+<div class="absolute -top-1.5 -left-1.5 w-3 h-3 bg-surface border-2 border-primary rounded-xs shadow-sm"></div>
+<div class="absolute -top-1.5 -right-1.5 w-3 h-3 bg-surface border-2 border-primary rounded-xs shadow-sm"></div>
+<div class="absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-surface border-2 border-primary rounded-xs shadow-sm"></div>
+<div class="absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-surface border-2 border-primary rounded-xs shadow-sm"></div>
+<!-- Midpoint Scale Anchors -->
+<div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-primary rounded-xs"></div>
+<div class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-primary rounded-xs"></div>
+<div class="absolute top-1/2 -translate-y-1/2 -left-1.5 w-2.5 h-2.5 bg-primary rounded-xs"></div>
+<div class="absolute top-1/2 -translate-y-1/2 -right-1.5 w-2.5 h-2.5 bg-primary rounded-xs"></div>
+<!-- Rotation Arm & Anchor -->
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 flex flex-col items-center pointer-events-none">
+<div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_8px_#f5b942]"></div>
+<div class="w-0.5 h-4 bg-primary"></div>
+</div>
+<!-- The Master Emblem SVG Artwork (Scalable Sacred Radiant Crest) -->
+<div class="relative flex flex-col items-center">
+<svg class="w-48 h-48 drop-shadow-[0_0_18px_rgba(245,185,66,0.45)]" fill="none" viewbox="0 0 200 200">
+<!-- Concentric Vector Radiance Rays -->
+<circle cx="100" cy="100" opacity="0.6" r="90" stroke="#f5b942" stroke-dasharray="4 6" stroke-width="1.5"></circle>
+<circle cx="100" cy="100" opacity="0.4" r="80" stroke="#ffdcc3" stroke-width="2"></circle>
+<circle cx="100" cy="100" r="70" stroke="#f5b942" stroke-linecap="round" stroke-width="3"></circle>
+<!-- Radiant Sunbeams / Sacred Cross Geometry -->
+<path d="M100 20 L100 180 M20 100 L180 100" opacity="0.7" stroke="#f5b942" stroke-linecap="round" stroke-width="2"></path>
+<path d="M43 43 L157 157 M43 157 L157 43" opacity="0.4" stroke="#ffda9c" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<!-- Inner Diamond & Sacred Chancel Shield -->
+<polygon fill="#1c2028" fill-opacity="0.6" points="100,35 165,100 100,165 35,100" stroke="#f5b942" stroke-width="2.5"></polygon>
+<!-- Central Anointed Flame / Cross of Light -->
+<path d="M100 55 C108 80 125 90 125 110 C125 125 114 138 100 138 C86 138 75 125 75 110 C75 90 92 80 100 55 Z" fill="url(#goldGrad)"></path>
+<circle cx="100" cy="105" fill="#ffffff" opacity="0.9" r="8"></circle>
+<!-- Master Gradients -->
+<defs>
+<lineargradient id="goldGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#ffe082"></stop>
+<stop offset="50%" stop-color="#f5b942"></stop>
+<stop offset="100%" stop-color="#d97707"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- Typography Curved Arc Baseline & Wordmark -->
+<div class="mt-3 text-center">
+<h2 class="font-headline-md text-[24px] font-bold text-primary tracking-[0.22em] uppercase drop-shadow-md">
+            Photizo
+          </h2>
+<p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-[0.3em] mt-0.5 font-semibold">
+            Studio Suite • Est. 2025
+          </p>
+</div>
+</div>
+</div>
+<!-- Bottom Action Quick Pill (Curvature & Bezier Handles Indicator) -->
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 px-space-md py-space-xs rounded-full bg-surface/90 backdrop-blur-md ring-1 ring-surface-container-highest shadow-xl flex items-center gap-space-md text-on-surface font-label-sm text-[11px]">
+<span class="flex items-center gap-1.5 text-primary font-bold">
+<span class="material-symbols-outlined text-[15px]">timeline</span>
+<span class="">Bezier Curvature: Smooth (Tangent 14.2°)</span>
+</span>
+<span class="text-surface-container-highest">|</span>
+<span class="text-on-surface-variant">Fill: Radiant Gold (#F5B942)</span>
+<span class="text-surface-container-highest">|</span>
+<span class="text-on-surface-variant">Stroke: 2.50 pt</span>
+</div>
+</div>
+</div>
+<!-- BOTTOM DOCK: Vector Layers, Swatches & Royalty Publishing -->
+<div class="h-56 bg-surface-container-lowest flex border-t border-surface-container-highest select-none overflow-hidden">
+<!-- Left: Vector Layers & Asset Hierarchy -->
+<div class="w-80 bg-surface-container-low border-r border-surface-container-highest flex flex-col shrink-0">
+<div class="px-space-sm py-1.5 bg-surface-container flex items-center justify-between border-b border-surface-container-highest">
+<span class="font-label-sm text-[11px] font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">layers</span>
+<span class="">Vector Layers (4)</span>
+</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="hover:text-on-surface" title="New Layer" type="button"><span class="material-symbols-outlined text-[15px]">add</span></button>
+<button class="hover:text-on-surface" title="Delete Layer" type="button"><span class="material-symbols-outlined text-[15px]">delete</span></button>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto divide-y divide-surface-container-highest font-label-sm text-[11px]">
+<!-- Layer 1 (Selected) -->
+<div class="px-2.5 py-1.5 flex items-center justify-between bg-primary/10 text-primary border-l-2 border-primary">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[14px]">token</span>
+<span class="truncate font-bold">Radiant Aura (Concentric Vector Ring)</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary cursor-pointer">visibility</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-on-surface">lock_open</span>
+</div>
+</div>
+<!-- Layer 2 -->
+<div class="px-2.5 py-1.5 flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2 truncate"><span class="material-symbols-outlined text-[14px] text-secondary">polyline</span>
+<span class="truncate">Cross / Chancel Emblem (Bezier)</span></div>
+<div class="flex items-center gap-1.5 shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-on-surface">visibility</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-on-surface">lock_open</span>
+</div>
+</div>
+<!-- Layer 3 -->
+<div class="px-2.5 py-1.5 flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[14px] text-tertiary">title</span>
+<span class="truncate">Typography: 'Photizo' (Cinematic Serif / Arc 12°)</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-on-surface">visibility</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-on-surface">lock_open</span>
+</div>
+</div>
+<!-- Layer 4 -->
+<div class="px-2.5 py-1.5 flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">format_quote</span>
+<span class="truncate">Motto: 'Illuminate Every Frame' (0.24em)</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-on-surface">visibility</span>
+<span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-on-surface">lock</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Vector Property Bar, Swatches & Color Harmonies -->
+<div class="flex-1 bg-surface-container-lowest p-space-sm flex flex-col justify-between overflow-x-auto">
+<!-- Top Row: Fill, Stroke, Swatches & Pathfinder -->
+<div class="flex items-center justify-between gap-space-md flex-wrap">
+<!-- Color Swatches -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-[11px] text-on-surface-variant font-semibold">Swatches:</span>
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-md bg-[#f5b942] ring-2 ring-primary cursor-pointer shadow-sm" title="Radiant Gold (#F5B942)"></div>
+<div class="w-6 h-6 rounded-md bg-[#ffdcc3] ring-1 ring-surface-container-highest cursor-pointer" title="Warm Amber Light (#FFDCC3)"></div>
+<div class="w-6 h-6 rounded-md bg-[#ffffff] ring-1 ring-surface-container-highest cursor-pointer" title="Pure Light (#FFFFFF)"></div>
+<div class="w-6 h-6 rounded-md bg-[#0f131c] ring-1 ring-primary/40 cursor-pointer" title="Obsidian Noir (#0F131C)"></div>
+<div class="w-6 h-6 rounded-md border border-dashed border-primary/50 flex items-center justify-center text-primary cursor-pointer" title="Transparent Checkerboard">
+<span class="material-symbols-outlined text-[14px]">block</span>
+</div>
+</div>
+</div>
+<!-- Stroke & Corner Radius Sliders -->
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="">Weight:</span>
+<input class="w-20 accent-primary-container h-1 bg-surface-container-highest rounded cursor-pointer" max="20" min="1" type="range" value="6"/>
+<span class="text-primary font-mono">2.5 pt</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="">Radius:</span>
+<input class="w-20 accent-primary-container h-1 bg-surface-container-highest rounded cursor-pointer" max="50" min="0" type="range" value="12"/>
+<span class="text-primary font-mono">8 px</span>
+</div>
+</div>
+<!-- Pathfinder Boolean Buttons -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-lg">
+<button class="p-1 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded transition-colors" title="Unite Paths (Shape Union)" type="button">
+<span class="material-symbols-outlined text-[16px]">join_full</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded transition-colors" title="Subtract Front (Minus Front)" type="button">
+<span class="material-symbols-outlined text-[16px]">join_left</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded transition-colors" title="Intersect Paths" type="button">
+<span class="material-symbols-outlined text-[16px]">join_inner</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded transition-colors" title="Exclude Overlap" type="button">
+<span class="material-symbols-outlined text-[16px]">join_right</span>
+</button>
+</div>
+</div>
+<!-- Bottom Info Banner: Remixable Vector Brand Kit & Royalty -->
+<div class="mt-2 p-2 rounded-xl bg-surface-container-high flex items-center justify-between border border-primary/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[12px] font-bold text-on-surface">Remixable Vector Brand Kit Ready</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Other ministries can adopt this logo preset with automated church name swap and Espees/Naira royalty.</span>
+</div>
+</div>
+<button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-[11px] font-bold hover:bg-primary transition-colors shadow-sm" type="button">
+        Publish Brand Kit (15% Royalty)
+      </button>
+</div>
+</div>
+</div></section>
+<!-- RIGHT PANEL: PLEROMA AI REVIEW (Signature Radiant Inspector Sidebar) -->
+<aside class="w-full xl:w-96 bg-surface-container-low flex flex-col justify-between overflow-y-auto z-20 shrink-0 shadow-2xl"><!-- Panel Header with Glowing Radiant Gradient Sheen -->
+<div class="relative p-space-lg bg-surface-container-high overflow-hidden shadow-sm">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">auto_awesome</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Pleroma AI Review</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-sm">
+      Vector Pro
+    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+    Real-time vector topology, theological symbolism &amp; brand scalability auditor.
+  </p>
+<!-- Quota Meter Card -->
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vector Audits Available</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">22 / 25 left</span>
+<span class="font-label-sm text-[10px] text-secondary">Radiant Tier Unlimited Priority</span>
+</div>
+<!-- Mini Circular SVG Progress (88%) -->
+<div class="relative w-12 h-12 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-code-sm text-[11px] font-bold text-on-surface">88%</span>
+</div>
+</div>
+<!-- Audit Action Trigger -->
+<button class="mt-space-md w-full py-space-xs px-space-md rounded-lg bg-surface hover:bg-surface-container-highest text-primary font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span class="">Re-run Vector Topology &amp; Contrast Audit</span>
+</button>
+</div>
+<!-- AI Review Suggestions Stream -->
+<div class="p-space-lg flex flex-col gap-space-md flex-1 overflow-y-auto">
+<!-- CARD 1: Vector Scalability & Contrast Audit -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-md flex flex-col gap-space-xs group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">aspect_ratio</span>
+<span class="font-label-lg text-label-lg text-on-surface">Vector Scalability &amp; Contrast</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-primary-container text-on-primary-container font-label-sm text-[10px] font-bold">100% Scalable</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Vector path topology optimized. <strong class="text-primary font-medium">0 raster artifacts</strong> detected. Clean bezier nodes scale cleanly from 16px favicon to stadium LED screen.
+    </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-1.5 px-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold hover:bg-primary transition-colors shadow-sm" type="button">
+        Optimize Path Nodes
+      </button>
+<button class="py-1.5 px-space-sm rounded-lg bg-surface hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+        Inspect Nodes
+      </button>
+</div>
+</div>
+<!-- CARD 2: Theological Symbolism Verification -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-md flex flex-col gap-space-xs group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-lg text-label-lg text-on-surface">Theological Symbolism</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-highest text-primary font-code-sm text-[10px] font-bold">VERIFIED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Geometry matches <strong class="text-on-surface font-semibold">1 John 1:5</strong> (God is Light) and Kingdom fellowship emblems. Sunbeam angles harmonized with radiant gold palette.</p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-1.5 px-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold hover:bg-primary transition-colors shadow-sm" type="button">
+        Attach PCDL Scripture Tag
+      </button>
+<button class="py-1.5 px-space-sm rounded-lg bg-surface hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+        Details
+      </button>
+</div>
+</div>
+<!-- CARD 3: Dark / Light Mode & Transparency Test -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-md flex flex-col gap-space-xs group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">contrast</span>
+<span class="font-label-lg text-label-lg text-on-surface">Dark / Light Mode Test</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-highest text-secondary font-code-sm text-[10px] font-bold">4.8:1 Ratio</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Transparent alpha tested against obsidian dark (#0F131C) and light ivory (#F8F9FC). Passed WCAG AAA contrast ratio across all ecclesiastical print formats.
+    </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-1.5 px-space-sm rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary-fixed transition-colors shadow-sm" type="button">
+        Generate Favicon &amp; App Icons
+      </button>
+<button class="py-1.5 px-space-sm rounded-lg bg-surface hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+        Preview Modes
+      </button>
+</div>
+</div>
+</div>
+<!-- Bottom Audio Quality & Reverence Index Telemetry -->
+<div class="p-space-md bg-surface-container-high flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">psychology</span>
+<span class="">Visual Radiance Index</span>
+</span>
+<span class="text-primary font-code-sm text-code-sm font-bold">99.2% Pristine</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-[99%]"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mt-1">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified_user</span>
+<span class="">PCDL Brand Compatibility</span>
+</span>
+<span class="text-secondary font-code-sm text-code-sm font-bold">100% Compliant</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full w-full"></div>
+</div>
+</div></aside>
+</div>
+<!-- BOTTOM UTILITY, MONETIZATION & QUICK EXPORT BAR -->
+<footer class="w-full bg-surface-container-low px-space-lg py-space-sm flex flex-wrap items-center justify-between gap-space-md shadow-lg z-30"><!-- Left: Royalty & Template Publishing Switch -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="">Publish Logo as Remixable Brand Kit</span>
+<span class="material-symbols-outlined text-primary text-[14px]">monetization_on</span>
+</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">
+        Earn 15% Creator Royalty (₦ / Espees) when other ministries remix or adopt this emblem kit.
+      </span>
+</div>
+</div>
+</div>
+<!-- Center: Specs Badge / System Telemetry -->
+<div class="hidden md:flex items-center gap-space-lg text-on-surface-variant font-code-sm text-code-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[16px]">cloud_done</span>
+<span class="">SVG 1.1 &amp; 2.0 Spec Compliant</span>
+</div>
+<span class="">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[16px]">memory</span>
+<span class="">GPU Vector Rasterizer: Apple Metal / WebGPU Active</span>
+</div>
+</div>
+<!-- Right: Quick Target Export Format Selector -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1 px-space-sm py-space-2xs rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="text-on-surface-variant">Target:</span>
+<select class="bg-transparent text-primary font-semibold focus:outline-none cursor-pointer">
+<option class="bg-surface-container-high text-on-surface" selected="">Export SVG (Scalable Vector)</option>
+<option class="bg-surface-container-high text-on-surface">Export Transparent PNG (300 DPI / 4K)</option>
+<option class="bg-surface-container-high text-on-surface">Export WebP (Alpha)</option>
+<option class="bg-surface-container-high text-on-surface">Sync to PCDL Brand Assets</option>
+<option class="bg-surface-container-high text-on-surface">App Icon Bundle (iOS / Android)</option>
+</select>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+    Batch Export (4)
+  </button>
+</div></footer>
+</div>
+<script>
+  // Micro-interactions for creative controls
+  document.addEventListener('DOMContentLoaded', () => {
+    // Scrubbing or transport toggle mock
+    const playBtn = document.querySelector('button .material-symbols-outlined[style*="FILL: 1"]')?.parentElement;
+    if (playBtn) {
+      let isPlaying = false;
+      playBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        const icon = playBtn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.textContent = isPlaying ? 'pause' : 'play_arrow';
+        }
+      });
+    }
+  });
+</script></main></div>
+<script defer="" src="assets/site.js"></script></body></html>

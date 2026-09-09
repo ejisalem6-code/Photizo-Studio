@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#6a4a00","on-primary-fixed":"#271900","primary-fixed":"#ffdea8","surface-container-high":"#262a33","primary":"#ffda9c","on-surface":"#dfe2ee","surface-container-lowest":"#0a0e16","primary-container":"#f5b942","on-secondary-fixed-variant":"#6e3900","on-secondary-container":"#432100","on-tertiary-fixed":"#001c39","background":"#0f131c","outline-variant":"#504535","secondary-fixed":"#ffdcc3","on-secondary-fixed":"#2f1500","secondary-fixed-dim":"#ffb77d","tertiary-container":"#9dc5ff","surface-container":"#1c2028","secondary":"#ffb77d","on-background":"#dfe2ee","surface-dim":"#0f131c","on-tertiary":"#00315d","tertiary-fixed-dim":"#a4c9ff","tertiary-fixed":"#d4e3ff","on-surface-variant":"#d4c4af","on-primary":"#422d00","tertiary":"#cde0ff","error-container":"#93000a","surface-bright":"#353942","on-tertiary-fixed-variant":"#004883","on-error":"#690005","on-secondary":"#4d2600","on-primary-fixed-variant":"#5e4200","surface-container-low":"#181c24","surface-container-highest":"#31353e","outline":"#9c8f7b","error":"#ffb4ab","on-error-container":"#ffdad6","surface-variant":"#31353e","secondary-container":"#d97707","inverse-surface":"#dfe2ee","primary-fixed-dim":"#f9bc45","inverse-primary":"#7c5800","surface-tint":"#f9bc45","inverse-on-surface":"#2c3039","surface":"#0f131c","on-tertiary-container":"#005193"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"panel-width-inspector":"20rem","space-base":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-3xl":"4rem","space-4xl":"6rem","space-md":"0.75rem","space-2xs":"0.125rem","panel-width-media":"18rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-2xl":"3rem","space-sm":"0.5rem","space-xl":"2rem"},fontFamily:{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"],"display-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"code-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"400"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.4)] z-50 flex flex-col justify-between p-space-base"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs py-space-xs"><img alt="Brand logo. - Primary color: #f5b942 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Photizo</span><span class="font-label-sm text-label-sm text-secondary leading-none mt-space-2xs uppercase tracking-wider">Studio Suite</span></div></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="dashboard.html">Home</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="editor" href="editor.html">Editor</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="templates" href="templates.html">Templates</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="photizo-space" href="storage.html">Photizo Space</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="pcdl-hub" href="pcdl-hub.html">PCDL Hub</a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]" data-path="reels" href="reels.html">Reels</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="community" href="community.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">diversity_3</span><span>Community</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="notifications" href="notifications.html">Notifications</a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant">Cloud Storage</span><span class="text-primary font-code-sm text-code-sm">68.4 / 100 GB</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full w-[68%]"></div></div></div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="workspace-settings" href="settings.html">Workspace Settings</a><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_4px_20px_-2px_rgba(245,185,66,0.35)] hover:bg-primary transition-colors" data-path="pricing-upgrade" href="upgrade.html"><span class="material-symbols-outlined text-[18px]">flare</span><span>Upgrade to Radiant</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #f5b942 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="relative w-96 flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full h-9 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search projects, templates, PCDL scriptures, media assets... /" type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[16px]">cloud_done</span><span>Photizo Cloud: Synced</span></div><button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button"><span class="material-symbols-outlined text-tertiary-container text-[18px]">auto_awesome</span><span>Pleroma AI</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container ring-2 ring-surface"></span></button><a class="hover:opacity-80 transition-opacity cursor-pointer" href="profile.html"><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col items-end"><span class="font-label-lg text-label-lg text-on-surface leading-none">Minister David O.</span><span class="flex items-center gap-space-2xs mt-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary"><span class="material-symbols-outlined text-[14px]">stars</span>Radiant Member</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(245,185,66,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></a></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- ATMOSPHERIC RADIANT BEAMS (Parent-contained ambient glow) -->
+<div class="relative w-full overflow-hidden px-space-xl py-space-xl flex flex-col gap-space-2xl">
+<!-- Ambient luminous gradients -->
+<div class="absolute -top-40 -right-40 w-[600px] h-[600px] pointer-events-none rounded-full bg-gradient-to-br from-primary-container/10 via-secondary-container/5 to-transparent blur-3xl"></div>
+<div class="absolute top-1/3 -left-48 w-[500px] h-[500px] pointer-events-none rounded-full bg-gradient-to-tr from-tertiary-container/10 via-primary/5 to-transparent blur-3xl"></div>
+<!-- SECTION 1: GOVERNANCE HEADER & SYSTEM STATUS METRICS RIBBON -->
+<section class="relative z-10 flex flex-col gap-space-lg">
+<!-- Breadcrumb & Multi-Sig Authority Badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Console</span>
+<span class="text-outline">/</span>
+<span>Super Admin Oversight</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-semibold">Ecclesiastical Infrastructure &amp; Node Control</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight flex items-center gap-space-sm">
+            Root Sovereign Governance
+            <span class="px-space-sm py-space-2xs rounded-full bg-surface-container-high text-primary font-code-sm text-code-sm uppercase tracking-widest font-semibold">v4.8.2-SEC</span>
+</h1>
+</div>
+<!-- Root Security Authority Tag -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-lg py-space-sm rounded-xl shadow-lg">
+<div class="relative flex items-center justify-center">
+<span class="w-3 h-3 rounded-full bg-primary animate-ping absolute opacity-75"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Root Authority Level 5 Active</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Multi-Sig Ministerial Protocol Enforced</span>
+</div>
+</div>
+</div>
+<!-- Quick Actions Bar & Live Metrics Ribbon -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Metric 1: Platform Users -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between relative overflow-hidden shadow-md group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Global Creators</span>
+<span class="p-space-xs rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">groups_3</span>
+</span>
+</div>
+<div class="flex flex-col mt-space-md">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">18,420</span>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm mt-space-2xs">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+14% WoW (Ministry Global Mesh)</span>
+</div>
+</div>
+<!-- Micro sparkline indicator SVG -->
+<svg class="w-full h-7 text-primary/40 mt-space-sm" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 160 28">
+<path d="M0 24 Q 25 10, 50 18 T 100 8 T 130 14 T 160 2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<!-- Metric 2: Compute Cluster Load -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between relative overflow-hidden shadow-md group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Compute Load</span>
+<span class="p-space-xs rounded-lg bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[20px]">memory</span>
+</span>
+</div>
+<div class="flex flex-col mt-space-md">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">48 / 64 GPU Nodes</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mt-space-2xs">
+<span>Allocation Rate</span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">75.0% In-Use</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden mt-space-xs">
+<div class="h-full bg-secondary-container rounded-full w-3/4"></div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Autoscaling Ready (Buffer: 16 H100s)</span>
+</div>
+</div>
+<!-- Metric 3: Pleroma AI Review Pipeline -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between relative overflow-hidden shadow-md group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pleroma Review Engine</span>
+<span class="p-space-xs rounded-lg bg-surface-container-high text-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</span>
+</div>
+<div class="flex flex-col mt-space-md">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">1,248 Verifications/hr</span>
+<div class="flex items-center gap-space-xs text-tertiary-container font-label-sm text-label-sm mt-space-2xs">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>99.8% Scripture Doctrinal Concordance</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mt-space-sm pt-space-xs">
+<span>Mean Latency: <strong class="text-on-surface font-code-sm">184ms</strong></span>
+<span class="text-primary font-semibold">Automated Pass</span>
+</div>
+</div>
+<!-- Metric 4: Platform Storage Allocated -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between relative overflow-hidden shadow-md group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Photizo Archive &amp; Vault</span>
+<span class="p-space-xs rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</span>
+</div>
+<div class="flex flex-col mt-space-md">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">412.8 / 800 TB</span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mt-space-2xs">
+<span>Capacity Consumption</span>
+<span class="font-code-sm text-code-sm text-primary font-semibold">51.6%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden mt-space-xs">
+<div class="h-full bg-primary-container rounded-full w-[51.6%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mt-space-sm">
+<span>Redundancy: 3-Zone Mirror</span>
+<span class="text-secondary font-code-sm font-semibold">Cold Vault Synced</span>
+</div>
+</div>
+</div>
+<!-- Action Row: Fast Access Generator & Export Security Audits -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px] text-primary">gavel</span>
+<span>Sovereign Ministerial Protocol 09-Omega Active &amp; Enforced via KingsChat SSO</span>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Download System Security Audit Log</span>
+</button>
+<a class="flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-lg shadow-primary-container/20 hover:opacity-95 transition-all" href="#admin-generator">
+<span class="material-symbols-outlined text-[20px]">key</span>
+<span>Generate 12-Hour Admin Invitation</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 2: 12-HOUR SINGLE-USE ADMIN INVITATION GENERATOR (CORE INTERACTIVE WORKFLOW) -->
+<section class="relative z-10 flex flex-col gap-space-lg" id="admin-generator">
+<div class="bg-surface-container-low rounded-xl p-space-xl shadow-xl flex flex-col gap-space-xl">
+<!-- Header Banner -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest font-semibold">
+<span class="material-symbols-outlined text-[16px]">lock_clock</span>
+<span>Ephemeral Delegation Protocol</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Issue Single-Use Ephemeral Admin Access Link</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Generate cryptographically signed, single-use invitation tokens that expire strictly in 12 hours from generation. Automatically invalidates upon first redemption or unauthorized IP boundary traversal.
+            </p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-sm rounded-lg self-start lg:self-center">
+<span class="material-symbols-outlined text-secondary text-[20px]">timer</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Mandatory Expiry</span>
+<span class="font-code-sm text-code-sm text-on-surface font-bold">Strict 12h 00m Hard TTL (Non-Renewable)</span>
+</div>
+</div>
+</div>
+<!-- Interactive Generation Form -->
+<div class="bg-surface-container p-space-lg rounded-xl grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<!-- Nominee Input -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold" for="minister-nominee">
+              Target Nominee / Ministerial Official
+            </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px]">person_pin</span>
+<input class="w-full h-11 pl-11 pr-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="minister-nominee" type="text" value="Pastor Kemi A. (Regional Director, Virtual Zone 2)"/>
+</div>
+</div>
+<!-- Permission Scope Dropdown / Selector -->
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold" for="admin-role-select">
+              Admin Role &amp; Permission Delegation Scope
+            </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px]">admin_panel_settings</span>
+<select class="w-full h-11 pl-11 pr-10 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none focus:ring-1 focus:ring-primary-container cursor-pointer transition-all" id="admin-role-select">
+<option selected="" value="cluster">Cluster Admin (GPU, Storage &amp; Edge Relays)</option>
+<option value="doctrinal">Doctrinal &amp; Pleroma Overseer (Scriptural Review Audits)</option>
+<option value="finance">Ecclesiastical Finance &amp; KingsPay Overseer</option>
+<option value="root">Super Administrator (Full Root Sovereign Delegation)</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Generation CTA Button -->
+<div class="lg:col-span-3 flex flex-col">
+<button class="w-full h-11 px-space-lg rounded-lg bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-sm shadow-md shadow-primary-container/25 hover:brightness-110 active:scale-[0.99] transition-all" id="btn-mint-token" type="button">
+<span class="material-symbols-outlined text-[20px]">vpn_key</span>
+<span>Mint Signed 12-Hour Token</span>
+</button>
+</div>
+</div>
+<!-- Token Generation Feedback Alert (Hidden by default, shown via click) -->
+<div class="hidden flex-col md:flex-row items-start md:items-center justify-between p-space-md rounded-lg bg-surface-container-highest gap-space-md" id="mint-success-banner">
+<div class="flex items-center gap-space-md">
+<span class="p-space-xs rounded-md bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">shield_lock</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Generated Cryptographic URL Ready</span>
+<span class="font-code-sm text-code-sm text-secondary">https://studio.photizo.org/auth/ephemeral?sig=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded bg-surface text-primary font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" onclick="navigator.clipboard.writeText('https://studio.photizo.org/auth/ephemeral?sig=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'); alert('Signed Ephemeral URL copied to clipboard!');" type="button">
+            Copy Link
+          </button>
+</div>
+<!-- Active Ephemeral Links Table -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Active &amp; Pending Ephemeral Tokens</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-primary font-code-sm text-code-sm font-bold">3 Active</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">phonelink_lock</span>
+              All links enforce single-device biometric KingsChat SSO verification
+            </span>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto rounded-xl bg-surface-container-lowest">
+<table class="w-full text-left border-collapse min-w-[840px]">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<th class="py-space-md px-space-lg">Target Nominee</th>
+<th class="py-space-md px-space-md">Role Scope</th>
+<th class="py-space-md px-space-md">Token ID</th>
+<th class="py-space-md px-space-md">Generated</th>
+<th class="py-space-md px-space-md">TTL Remaining</th>
+<th class="py-space-md px-space-md">Status</th>
+<th class="py-space-md px-space-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Pastor Michael B.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Christ Embassy Virtual Zone 4</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container-high text-tertiary-container font-label-sm text-label-sm font-medium">
+                      Doctrinal &amp; Pleroma Overseer
+                    </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-primary font-semibold">#INV-9921-EX12</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant">2h 15m ago</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-primary font-code-sm text-code-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">timelapse</span>
+<span>09h 45m</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                      Pending Acceptance
+                    </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-space-2xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Signed URL</span>
+</button>
+<button class="px-space-sm py-space-2xs rounded bg-error-container/30 hover:bg-error-container text-error font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">block</span>
+<span>Revoke</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/60 transition-colors bg-surface-container/20">
+<td class="py-space-md px-space-lg">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Deaconess Ruth E.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LoveWorld Music &amp; Arts Ministry (LMAM)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-medium">
+                      Ecclesiastical Finance Overseer
+                    </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-primary font-semibold">#INV-8834-EX12</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant">8h 10m ago</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-secondary-container font-code-sm text-code-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">alarm</span>
+<span>03h 50m</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-secondary-container/20 text-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                      Pending Acceptance
+                    </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-space-2xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Signed URL</span>
+</button>
+<button class="px-space-sm py-space-2xs rounded bg-error-container/30 hover:bg-error-container text-error font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">block</span>
+<span>Revoke</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Claimed / Bound -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Elder Tunde O.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CeFlix Satellite Broadcast Operations</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+                      Cluster Admin (GPU &amp; Relay Nodes)
+                    </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-on-surface-variant">#INV-7712-RED</span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant">11h 00m ago</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-outline">Redeemed</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Claimed &amp; Bound (Active Session)
+                    </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<button class="px-space-sm py-space-2xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs ml-auto" type="button">
+<span class="material-symbols-outlined text-[16px]">history_toggle_off</span>
+<span>Session Telemetry</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: USER & CAMPUS DIRECTORATE MANAGEMENT DIRECTORY -->
+<section class="relative z-10 flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Ecclesiastical User &amp; Campus Directorate</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage global creators, Lambent Diamond leaders, storage quotas, and scriptural review compliance ratings across all zones.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative w-72">
+<span class="material-symbols-outlined absolute left-space-md top-2.5 text-outline text-[18px]">person_search</span>
+<input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search by name, KingsChat ID, zone..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Filter Chips Segment -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-sm" type="button">
+          All Users (18,420)
+        </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+          Radiant Members (4,120)
+        </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-tertiary font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[14px]">diamond</span>
+<span>Lambent Diamond VIP (680)</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-secondary font-label-sm text-label-sm transition-colors" type="button">
+          Pending Verification (42)
+        </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-error font-label-sm text-label-sm transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span>Flagged Content (3)</span>
+</button>
+</div>
+<!-- Main Directory Table Container -->
+<div class="w-full overflow-x-auto rounded-xl bg-surface-container-low shadow-xl">
+<table class="w-full text-left border-collapse min-w-[960px]">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<th class="py-space-md px-space-lg">User / Minister Profile</th>
+<th class="py-space-md px-space-md">Campus / Zone</th>
+<th class="py-space-md px-space-md">Storage Allocation</th>
+<th class="py-space-md px-space-md">Pleroma Review Score</th>
+<th class="py-space-md px-space-md">Tier &amp; Billing</th>
+<th class="py-space-md px-space-md">Status</th>
+<th class="py-space-md px-space-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Minister David O. -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary font-bold">
+                    DO
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Minister David O.</span>
+<span class="font-label-sm text-label-sm text-secondary">@MinisterDavid • KC-9021</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface-variant">Christ Embassy Virtual Zone 1</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-on-surface font-semibold">68.4 GB</span>
+<span class="text-on-surface-variant">/ 100 GB</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-[68.4%]"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm font-bold text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>98.4 Doctrinal Rating</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">flare</span>
+                  Radiant Annual (KingsPay)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Active / Good Standing
+                </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-on-surface transition-colors" title="Inspect Creator Portfolio" type="button">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+</button>
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-primary transition-colors" title="Modify Tier Override" type="button">
+<span class="material-symbols-outlined text-[18px]">upgrade</span>
+</button>
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-secondary transition-colors" title="Impersonate Cloud Studio" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Pastor Joshua K. - Lambent Diamond -->
+<tr class="hover:bg-surface-container transition-colors bg-surface-container/30">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary-container font-bold">
+                    JK
+                  </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-2xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Pastor Joshua K.</span>
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">stars</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">@JoshKings • KC-4401</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface-variant">Lagos Central Zone 2 Regional Ops</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-on-surface font-semibold">412.0 GB</span>
+<span class="text-on-surface-variant">/ 1 TB</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full w-[41.2%]"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm font-bold text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>99.9 Doctrinal Rating</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">diamond</span>
+                  Lambent Diamond VIP
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Verified Sovereign Leader
+                </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-on-surface transition-colors" title="Inspect Creator Portfolio" type="button">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+</button>
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-primary transition-colors" title="Modify Tier Override" type="button">
+<span class="material-symbols-outlined text-[18px]">upgrade</span>
+</button>
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-secondary transition-colors" title="Impersonate Cloud Studio" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Sister Grace M. -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary font-bold">
+                    GM
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Sister Grace M.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">@GraceMedia • KC-1189</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface-variant">UK Region 1 Zone 2 Broadcast Unit</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-on-surface font-semibold">22.8 GB</span>
+<span class="text-on-surface-variant">/ 50 GB</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-[45%]"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm font-bold text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>96.8 Doctrinal Rating</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                  Spark Starter (Free)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Active
+                </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-on-surface transition-colors" title="Inspect Creator Portfolio" type="button">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+</button>
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-primary transition-colors" title="Modify Tier Override" type="button">
+<span class="material-symbols-outlined text-[18px]">upgrade</span>
+</button>
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-secondary transition-colors" title="Impersonate Cloud Studio" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Brother Samuel E. (Flagged Review Sample) -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error-container/30 flex items-center justify-center text-error font-bold">
+                    SE
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Brother Samuel E.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">@SamVisuals • KC-8912</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface-variant">Accra Ghana Zone Ministry Center</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-on-surface font-semibold">89.9 GB</span>
+<span class="text-on-surface-variant">/ 100 GB</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full w-[89.9%]"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm font-bold text-error">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>78.2% (Flagged Cadence)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">flare</span>
+                  Radiant Monthly
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-space-2xs text-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                  Under Doctrinal Audit
+                </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-on-surface transition-colors" title="Inspect Creator Portfolio" type="button">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+</button>
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-error transition-colors" title="Resolve Doctrinal Flag" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+<button class="p-space-xs rounded bg-surface hover:bg-surface-container-highest text-secondary transition-colors" title="Impersonate Cloud Studio" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- SECTION 4: PLEROMA AI REVIEW PIPELINE HEALTH & CLUSTER TELEMETRY (TWO-COLUMN BENTO) -->
+<section class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Cluster Telemetry Nodes -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">dns</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Global Compute Cluster Telemetry</h3>
+</div>
+<span class="font-code-sm text-code-sm text-primary font-bold">64 NODES SYNCHRONIZED</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Cluster Node 1: Lagos Mega-Hub -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between shadow-md hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md">
+<span class="w-3 h-3 rounded-full bg-primary animate-pulse"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Cluster Alpha (Lagos Mega-Hub)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24 Rendering &amp; Encoding Nodes Active</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-primary font-bold">100% Uptime</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1.2ms latency</span>
+</div>
+<span class="p-space-xs rounded bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</span>
+</div>
+</div>
+<!-- Cluster Node 2: Johannesburg Edge -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between shadow-md hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Cluster Beta (Johannesburg Edge)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">16 AI Inference &amp; Concordance Nodes</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-secondary font-bold">98.4% Uptime</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14.8ms latency</span>
+</div>
+<span class="p-space-xs rounded bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</span>
+</div>
+</div>
+<!-- Cluster Node 3: London Broadcast Relay -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between shadow-md hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Cluster Gamma (London Broadcast Relay)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12 Satellite Ingestion &amp; CDN Transcoders</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-primary font-bold">100% Uptime</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">8.1ms latency</span>
+</div>
+<span class="p-space-xs rounded bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</span>
+</div>
+</div>
+<!-- Cluster Node 4: North America Node -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between shadow-md hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-md">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Cluster Delta (North America Node)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12 Distributed Edge Caches &amp; Archive Sync</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg text-right">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-primary font-bold">100% Uptime</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12.4ms latency</span>
+</div>
+<span class="p-space-xs rounded bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Automated Scripture Alignment Monitor Feed -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[22px]">spellcheck</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Pleroma Scripture Alignment Stream</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-2xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            Live Inspection Engine
+          </span>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md shadow-md h-full justify-between">
+<!-- Feed Item 1 -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-md hover:bg-surface-container-high transition-colors">
+<span class="p-space-xs rounded-md bg-primary-container/20 text-primary mt-1">
+<span class="material-symbols-outlined text-[20px]">movie</span>
+</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Praise Night Recap Reel #4910</span>
+<span class="font-code-sm text-code-sm text-primary font-bold">Passed (100%)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Full lexical alignment with Pastor Chris Digital Archive audio track verified. Zero doctrinal deviations detected.
+              </p>
+<div class="flex items-center gap-space-sm mt-space-xs font-label-sm text-label-sm text-outline">
+<span>Source: Virtual Zone 1 Media Suite</span>
+<span>•</span>
+<span>Render Time: 4.2s</span>
+</div>
+</div>
+</div>
+<!-- Feed Item 2 -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-md hover:bg-surface-container-high transition-colors">
+<span class="p-space-xs rounded-md bg-tertiary-container/20 text-tertiary-container mt-1">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Romans 8:11 Kinetic Rhema Motion Graphic</span>
+<span class="font-code-sm text-code-sm text-tertiary-container font-bold">Verified Concordance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Greek Interlinear &amp; Rhapsody of Realities authoritative commentary cross-referenced. Typography timing aligned.
+              </p>
+<div class="flex items-center gap-space-sm mt-space-xs font-label-sm text-label-sm text-outline">
+<span>Source: LMAM International Motion Lab</span>
+<span>•</span>
+<span>Concordance: 100%</span>
+</div>
+</div>
+</div>
+<!-- Feed Item 3 -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-md hover:bg-surface-container-high transition-colors">
+<span class="p-space-xs rounded-md bg-secondary-container/20 text-secondary mt-1">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Healing Streams Broadcast Cut #140</span>
+<span class="font-code-sm text-code-sm text-secondary font-bold">Audio Stem Nominal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Loudness standards verified at LUFS -14.1. True peak limiter compliant for global satellite transmission.
+              </p>
+<div class="flex items-center gap-space-sm mt-space-xs font-label-sm text-label-sm text-outline">
+<span>Source: Healing School Studio 3</span>
+<span>•</span>
+<span>Audio Stem: Master Passed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: REAL-TIME SECURITY & ECCLESIASTICAL AUDIT TRAIL -->
+<section class="relative z-10 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-xl shadow-xl flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest font-semibold">
+<span class="material-symbols-outlined text-[16px]">fingerprint</span>
+<span>Cryptographically Sealed Ledger</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Real-Time Ecclesiastical Security Audit Trail</h3>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">data_object</span>
+<span>Export Cryptographic Audit (JSON)</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Generate Ministerial Oversight PDF</span>
+</button>
+</div>
+</div>
+<!-- Ledger Event Stream -->
+<div class="flex flex-col divide-y-0 gap-space-xs font-code-sm text-code-sm bg-surface-container-lowest p-space-lg rounded-xl">
+<!-- Event 1 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="text-primary font-bold">14:22:01 UTC</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="text-on-surface">Super Admin root token verified for Session #SA-0019 via biometric multi-sig</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">IP: 102.89.44.18 (Lagos Secured Hub)</span>
+</div>
+<!-- Event 2 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="text-secondary font-bold">13:58:44 UTC</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface">Single-use ephemeral admin invite #INV-8834 minted by Overseer Council</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Issuer: Root Console</span>
+</div>
+<!-- Event 3 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="text-tertiary font-bold">12:40:19 UTC</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-on-surface">Tier upgrade processed: Lambent Diamond VIP assigned to Virtual Zone 1 Broadcast Hub</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Method: KingsPay Ledger #KP-99120</span>
+</div>
+<!-- Event 4 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-sm rounded-lg hover:bg-surface-container transition-colors gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="text-outline font-bold">11:15:02 UTC</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="text-on-surface">Automated cold storage backup completed to Photizo Vault (14.2 TB written)</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Storage Target: Vault Tier-Omega</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Micro-interaction for Ephemeral Token Minting
+  document.getElementById('btn-mint-token')?.addEventListener('click', function() {
+    const banner = document.getElementById('mint-success-banner');
+    if (banner) {
+      banner.classList.remove('hidden');
+      banner.classList.add('flex');
+      banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+</script></main></div><script defer="" src="assets/site.js"></script></body></html>

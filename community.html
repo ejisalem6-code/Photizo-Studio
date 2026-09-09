@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#6a4a00","on-primary-fixed":"#271900","primary-fixed":"#ffdea8","surface-container-high":"#262a33","primary":"#ffda9c","on-surface":"#dfe2ee","surface-container-lowest":"#0a0e16","primary-container":"#f5b942","on-secondary-fixed-variant":"#6e3900","on-secondary-container":"#432100","on-tertiary-fixed":"#001c39","background":"#0f131c","outline-variant":"#504535","secondary-fixed":"#ffdcc3","on-secondary-fixed":"#2f1500","secondary-fixed-dim":"#ffb77d","tertiary-container":"#9dc5ff","surface-container":"#1c2028","secondary":"#ffb77d","on-background":"#dfe2ee","surface-dim":"#0f131c","on-tertiary":"#00315d","tertiary-fixed-dim":"#a4c9ff","tertiary-fixed":"#d4e3ff","on-surface-variant":"#d4c4af","on-primary":"#422d00","tertiary":"#cde0ff","error-container":"#93000a","surface-bright":"#353942","on-tertiary-fixed-variant":"#004883","on-error":"#690005","on-secondary":"#4d2600","on-primary-fixed-variant":"#5e4200","surface-container-low":"#181c24","surface-container-highest":"#31353e","outline":"#9c8f7b","error":"#ffb4ab","on-error-container":"#ffdad6","surface-variant":"#31353e","secondary-container":"#d97707","inverse-surface":"#dfe2ee","primary-fixed-dim":"#f9bc45","inverse-primary":"#7c5800","surface-tint":"#f9bc45","inverse-on-surface":"#2c3039","surface":"#0f131c","on-tertiary-container":"#005193"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"panel-width-inspector":"20rem","space-base":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-3xl":"4rem","space-4xl":"6rem","space-md":"0.75rem","space-2xs":"0.125rem","panel-width-media":"18rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-2xl":"3rem","space-sm":"0.5rem","space-xl":"2rem"},fontFamily:{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"],"display-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"code-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"400"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.4)] z-50 flex flex-col justify-between p-space-base"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs py-space-xs"><img alt="Brand logo. - Primary color: #f5b942 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Photizo</span><span class="font-label-sm text-label-sm text-secondary leading-none mt-space-2xs uppercase tracking-wider">Studio Suite</span></div></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="dashboard.html">Home</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="editor" href="editor.html">Editor</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="templates" href="templates.html">Templates</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="photizo-space" href="storage.html">Photizo Space</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="pcdl-hub" href="pcdl-hub.html">PCDL Hub</a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]" data-path="reels" href="reels.html">Reels</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="community" href="community.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">diversity_3</span><span>Community</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="notifications" href="notifications.html">Notifications</a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant">Cloud Storage</span><span class="text-primary font-code-sm text-code-sm">68.4 / 100 GB</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full w-[68%]"></div></div></div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="workspace-settings" href="settings.html">Workspace Settings</a><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_4px_20px_-2px_rgba(245,185,66,0.35)] hover:bg-primary transition-colors" data-path="pricing-upgrade" href="upgrade.html"><span class="material-symbols-outlined text-[18px]">flare</span><span>Upgrade to Radiant</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #f5b942 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="relative w-96 flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full h-9 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search projects, templates, PCDL scriptures, media assets... /" type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[16px]">cloud_done</span><span>Photizo Cloud: Synced</span></div><button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button"><span class="material-symbols-outlined text-tertiary-container text-[18px]">auto_awesome</span><span>Pleroma AI</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container ring-2 ring-surface"></span></button><a class="hover:opacity-80 transition-opacity cursor-pointer" href="profile.html"><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col items-end"><span class="font-label-lg text-label-lg text-on-surface leading-none">Minister David O.</span><span class="flex items-center gap-space-2xs mt-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary"><span class="material-symbols-outlined text-[14px]">stars</span>Radiant Member</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(245,185,66,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></a></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Canvas Backdrop -->
+<div class="relative w-full overflow-hidden px-space-xl py-space-lg flex flex-col gap-space-xl">
+<!-- Atmospheric Radiant Flares -->
+<div class="absolute -top-32 right-1/4 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 left-12 w-80 h-80 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-tertiary-container/5 blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. Header & Workspace Banner / Context Bar -->
+<section class="flex flex-col gap-space-lg">
+<!-- Breadcrumb & Workspace Pill Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="hover:text-on-surface transition-colors cursor-pointer">Photizo Suite</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Christ Embassy LoveWorld Virtual Zone</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Community &amp; Collaboration Hub</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Active Seats Telemetry Badge -->
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-high shadow-inner font-label-sm text-label-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#f5b942]"></span>
+<span class="text-on-surface-variant">Team Seats:</span>
+<span class="text-primary font-code-sm text-code-sm font-semibold">8 / 10 Lambent Active</span>
+</div>
+<!-- Quick Live Review Indicator Button -->
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm text-on-surface" type="button">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span>
+</span>
+<span class="font-bold">Live Room: Broadcast Assembly</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">(5 Inside)</span>
+</button>
+</div>
+</div>
+<!-- Main Headline & Global Actions Grid -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg p-space-xl rounded-2xl bg-surface-container-low shadow-xl relative overflow-hidden">
+<!-- Card top sheen beam -->
+<div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-primary/10 blur-2xl pointer-events-none"></div>
+<div class="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-l from-primary-container/5 to-transparent pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm max-w-3xl z-10">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs rounded bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Campus Ministry Hub</span>
+<div class="flex items-center gap-space-2xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>LMAM Protocol Level 3 Encrypted</span>
+</div>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-none">
+            Community &amp; Collaboration
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-2xl">
+            Coordinate campus media teams, orchestrate sermon reel cutdowns, conduct live collaborative timeline passes, and verify ecclesiastical sign-offs before multi-track broadcast distribution.
+          </p>
+<!-- Active Campus Switcher Pill -->
+<div class="mt-space-xs flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl bg-surface-container shadow-md">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[18px]">church</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Current Jurisdiction</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Christ Embassy Main Campus — Media &amp; Broadcast</span>
+</div>
+<button class="ml-space-xs p-space-2xs text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">swap_vert</span>
+</button>
+</div>
+<div class="flex items-center gap-space-2xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+<span>18 Campus Collaborators Connected</span>
+</div>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm z-10 shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Export Audit Trail</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px]">podium</span>
+<span>Live Review Session</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_4px_20px_-2px_rgba(245,185,66,0.35)] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>+ Invite Collaborator</span>
+</button>
+</div>
+</div>
+<!-- 2. Sub-Navigation Tabs & Quick Filter Strip -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md border-b-0 pb-0">
+<div class="flex items-center gap-space-xs overflow-x-auto">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]" type="button">
+<span class="material-symbols-outlined text-[18px]">view_quilt</span>
+<span>Overview &amp; Activity</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+<span>Approval Pipelines</span>
+<span class="px-space-2xs py-0 rounded-full bg-secondary-container text-on-secondary-container font-code-sm text-code-sm font-bold">4</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>Campus Channels</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+<span>Role Permissions &amp; Access</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">chat</span>
+<span>KingsChat Ministry Sync</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filter: All Campuses</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</div>
+<button class="p-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 3. Collaborative Telemetry Strip (Key Metrics) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between gap-space-sm relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Active Broadcast Projects</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[18px]">movie_filter</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">24</span>
+<span class="text-primary font-label-sm text-label-sm font-semibold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +6 this week
+          </span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-[78%]"></div>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">4 awaiting Pastor DeeVyne sign-off</span>
+</div>
+<!-- Stat 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between gap-space-sm relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Turnaround Latency</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[18px]">timer</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">18m</span>
+<span class="text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">bolt</span> 42% faster
+          </span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full w-[90%]"></div>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Live collaborative timeline scrubbing</span>
+</div>
+<!-- Stat 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between gap-space-sm relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pleroma Scripture Accuracy</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">auto_stories</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">99.8%</span>
+<span class="text-tertiary-container font-label-sm text-label-sm font-semibold">Doctrinally Locked</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full w-[99%]"></div>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">KJV / ROR Cross-referenced automatically</span>
+</div>
+<!-- Stat 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between gap-space-sm relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Cloud Storage Allocation</span>
+<div class="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary font-bold text-[18px]">cloud_sync</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">68.4</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ 100 GB</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[68%]"></div>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Direct synchronized PCDL Stem Cache</span>
+</div>
+</section>
+<!-- 4. Main Collaborative Stage: Active Pipelines & Live Rooms (Asymmetric Split Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left 8 Columns: Pending Ministerial Sign-Offs & Editorial Reviews -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Section Header with Counter -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+              Pending Ministerial Sign-Offs &amp; Pipelines
+            </h2>
+<span class="px-space-xs py-space-2xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-[0_0_12px_rgba(245,185,66,0.3)]">
+              4 Active
+            </span>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-space-2xs" href="#">
+<span>View All Queue (16 items)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<!-- Pipeline Card 1: High Priority Midweek Cutdown (Featured with Preacher Video Preview) -->
+<div class="rounded-2xl bg-surface-container-low shadow-lg p-space-lg flex flex-col gap-space-md relative overflow-hidden group">
+<!-- Warm accent glow top bar -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-secondary-container to-transparent"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase tracking-wider flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">priority_high</span> High Urgency
+              </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold">
+                9:16 Vertical Reel
+              </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">TC: 00:01:24:18</span>
+</div>
+<!-- Reviewer Meta -->
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Assigned Reviewer:</span>
+<div class="flex items-center gap-space-2xs text-on-surface font-semibold">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center font-bold text-[10px] text-on-secondary">PD</div>
+<span>Pastor DeeVyne</span>
+</div>
+</div>
+</div>
+<!-- Card Body: Split Media Preview & Interactive Metadata -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg pt-space-xs">
+<!-- Left Thumbnail Preview (Using referenced preaching visual) -->
+<div class="md:col-span-5 relative rounded-xl overflow-hidden shadow-md bg-surface-container-highest aspect-[9/10] max-h-72">
+<img class="w-full h-full object-cover object-center" data-alt="An African Christian minister in an immaculate white tailored turtleneck and jacket holding a microphone with intense poise, preaching under golden cinematic stage lighting with a blurred congregation and amber studio depth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApvqfMr71mnPdS3oYqP893eXzMW9f1NcfDtD1LcOJC8z8a8Cez_0JIwjUrO2B35gmqOI9OjbwF1pGdaVfZmwVX1DqAtOz2HwsImEmj72PWvmVSVyzAt0enMLQr49X3WKrdhhorP-UwQMGYCiEkxKSLsCsH40ZIYuInSYkA8xjO04TUXhkD1NuHStHWSmD_ZiM_YldPcbl6qUZvR00hafhK6tiRm1arApomuHV-oH02TDlLZanIG1-h"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent flex flex-col justify-between p-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-space-2xs rounded-md bg-surface-container-lowest/80 backdrop-blur-md text-primary font-code-sm text-code-sm font-bold">
+                    Pleroma Ver. 99.1%
+                  </span>
+<span class="w-6 h-6 rounded-full bg-error flex items-center justify-center text-on-error text-[12px] font-bold">
+                    REC
+                  </span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Midweek Faith Cutdown</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">4K DCI · 60fps · ProRes 422</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg hover:scale-105 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right: Details, Transcript Excerpt & Reviewer Notes -->
+<div class="md:col-span-7 flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                    Sunday Service Midweek Cutdown (9:16 Reel)
+                  </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Key excerpt on "The Authority of the Word" with kinetic bold subtitles and amber focal lens flares. Prepared for LoveWorld Reels, Instagram, and KingsChat Ministry Channel.
+                </p>
+</div>
+<!-- Pleroma Doctrinal Insight Pill -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="flex items-center gap-space-2xs text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span> Pleroma AI Scripture Audit
+                  </span>
+<span class="text-primary font-code-sm text-code-sm">Colossians 1:27 KJV Verified</span>
+</div>
+<p class="font-code-sm text-code-sm text-on-surface-variant">
+                  "To whom God would make known what is the riches of the glory..." Lower-third typography conforms strictly to LMAM standards.
+                </p>
+</div>
+<!-- Editor & Collaboration Stack -->
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-on-surface text-[10px]">BK</div>
+<span class="text-on-surface-variant">Editor: <strong class="text-on-surface">Brother Kevin A.</strong></span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">comment</span>
+<span>12 Timecode Comments</span>
+</div>
+</div>
+<!-- Action Controls -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-lg text-label-lg font-bold shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Approve &amp; Dispatch</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">rate_review</span>
+<span>Request Revision</span>
+</button>
+<button class="p-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" title="Open in Collaborative Multi-Track Timeline" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pipeline Card 2: Multi-Track Broadcast Intro (Live Co-Editing) -->
+<div class="rounded-2xl bg-surface-container-low shadow-md p-space-lg flex flex-col gap-space-md relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider flex items-center gap-space-2xs">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span> Live Co-Editing
+              </span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-tertiary-container font-label-sm text-label-sm font-bold">
+                Main Broadcast 4K
+              </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Version 4.2 Draft</span>
+</div>
+<!-- Avatar stack of active collaborators -->
+<div class="flex items-center gap-space-xs">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-6 w-6 rounded-full ring-2 ring-surface bg-primary-container text-on-primary-container font-bold text-[10px] flex items-center justify-center">GE</div>
+<div class="inline-block h-6 w-6 rounded-full ring-2 ring-surface bg-secondary-container text-on-secondary-container font-bold text-[10px] flex items-center justify-center">DO</div>
+<div class="inline-block h-6 w-6 rounded-full ring-2 ring-surface bg-surface-bright text-on-surface font-bold text-[10px] flex items-center justify-center">+2</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">3 in timeline right now</span>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                Healing Streams Global Broadcast Intro (4K ProRes Master)
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Sister Grace E. currently keyframing the opening radiant light burst particle pass. Audio stems synced with choir master track from PCDL Hub.
+              </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px]">headphones</span>
+<span>Listen Audio Stem</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-md text-label-md font-bold shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">group_work</span>
+<span>Join Timeline</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pipeline Card 3: Approved & Queued for Satellite Uplink -->
+<div class="rounded-2xl bg-surface-container-low shadow-md p-space-lg flex flex-col gap-space-sm opacity-90 hover:opacity-100 transition-opacity">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-primary text-[14px]">task_alt</span> Ministerial Sign-Off Granted
+              </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Signed by: Pastor Sarah K. (LoveWorld Virtual Zone)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">satellite_alt</span> Ready for Satellite Feed
+            </span>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                WordFest 2025 Keynote Emblems &amp; Lower-Thirds Package
+              </h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Delivered in ProRes 4444 with Alpha Channel · Hash: #lw-782f-wordfest-25
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                View Certificate
+              </button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                Push to Live Switcher
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 4 Columns: Campus Voice/Timeline Rooms & Security Protocols -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Live Campus Broadcast Channels Widget -->
+<div class="rounded-2xl bg-surface-container-low shadow-lg p-space-lg flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">radio</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Campus Review Rooms</h3>
+</div>
+<button class="p-space-2xs text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+</button>
+</div>
+<!-- Active Room 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs relative group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs font-bold text-on-surface">
+<span class="text-primary font-code-sm text-code-sm">#</span>
+<span>sunday-broadcast-assembly</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-highest text-secondary font-code-sm text-code-sm font-bold flex items-center gap-space-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 8 Online
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Finalizing 4K switcher cuts and kinetic subtitles for 6 PM stream.
+            </p>
+<div class="flex items-center justify-between pt-space-2xs font-code-sm text-code-sm text-on-surface-variant">
+<span>Voice Channel: Active</span>
+<span class="text-primary hover:underline">Connect Audio →</span>
+</div>
+</div>
+<!-- Active Room 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs relative group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs font-bold text-on-surface">
+<span class="text-primary font-code-sm text-code-sm">#</span>
+<span>pleroma-scripture-audits</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-highest text-tertiary-container font-code-sm text-code-sm font-bold">
+                AI Bot Active
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Automated scriptural reference checks flagged 2 potential lower-third typos in Hebrews 11.
+            </p>
+<div class="flex items-center justify-between pt-space-2xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-secondary font-semibold">1 Alert Pending</span>
+<span class="text-primary hover:underline">Review Flag →</span>
+</div>
+</div>
+<!-- Active Room 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs relative group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs font-bold text-on-surface">
+<span class="text-primary font-code-sm text-code-sm">#</span>
+<span>reels-soundbite-sync</span>
+</div>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-highest text-on-surface-variant font-code-sm text-code-sm font-bold">
+                4 Online
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Selecting choral stems from last night’s Praise Night for TikTok &amp; KingsChat Reels.
+            </p>
+<div class="flex items-center justify-between pt-space-2xs font-code-sm text-code-sm text-on-surface-variant">
+<span>Syncing 5 Audio Stems</span>
+<span class="text-primary hover:underline">Listen In →</span>
+</div>
+</div>
+<!-- Launch Live Session CTA -->
+<button class="w-full py-space-sm px-space-md rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">mic</span>
+<span>Start Voice &amp; Timeline Room</span>
+</button>
+</div>
+<!-- Ecclesiastical Governance & Security Card -->
+<div class="rounded-2xl bg-surface-container-low shadow-md p-space-lg flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">LMAM Protocol</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ecclesiastical Guardrails</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Role-Based Access Control conforms strictly to LMAM Ministry Broadcast Standards. All final renders log a verifiable cryptographic hash registered directly into the PCDL Master Archive.
+          </p>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Verification Node</span>
+<span class="text-primary font-code-sm text-code-sm">Online (LoveWorld Virtual Zone)</span>
+</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant truncate">
+              Signature: 0x8F9a...2B4c_ECCLESIA_SIGNED
+            </div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span>Audit Log Retention:</span>
+<span class="text-on-surface font-semibold">Indefinite / Permanent</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Team Roster & Ecclesiastical Role Matrix -->
+<section class="rounded-2xl bg-surface-container-low shadow-xl p-space-xl flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Section Header with Actions -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">
+              Campus Media Ministry Roster &amp; Access Matrix
+            </h2>
+<span class="px-space-xs py-space-2xs rounded-full bg-surface-container-highest text-primary font-code-sm text-code-sm font-semibold">
+              5 Active On-Duty
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Manage granular publishing rights, Pleroma scripture overrides, and KingsChat verified linkages across ministry personnel.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="h-9 pl-9 pr-space-md rounded-lg bg-surface-container text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container w-64" placeholder="Search collaborator or role..." type="text"/>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Permissions</span>
+</button>
+</div>
+</div>
+<!-- Table Roster -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider bg-surface-container/50">
+<th class="py-space-sm px-space-md rounded-l-lg">Minister / Collaborator</th>
+<th class="py-space-sm px-space-md">Ecclesiastical Role</th>
+<th class="py-space-sm px-space-md">Tier &amp; Verification</th>
+<th class="py-space-sm px-space-md">Active Workflow Task</th>
+<th class="py-space-sm px-space-md">KingsChat Sync</th>
+<th class="py-space-sm px-space-md text-right rounded-r-lg">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: Minister David O. (Current User) -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold shadow-[0_0_12px_rgba(245,185,66,0.3)]">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary-container ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Minister David O.</span>
+<span class="px-space-xs py-0 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold">You</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Senior Broadcast Director</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Workspace Admin</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Full Master &amp; Dispatch Rights</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-space-2xs rounded-full bg-primary-container/15 text-primary font-label-sm text-label-sm font-bold flex items-center gap-space-2xs w-fit">
+<span class="material-symbols-outlined text-[14px]">stars</span> Radiant Member
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">edit_note</span>
+<span>Reviewing Midweek Reels</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-2xs text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>@MinisterDavid</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-space-xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                    Manage
+                  </button>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Pastor DeeVyne -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary font-bold">
+                      PD
+                    </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Pastor DeeVyne</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">LMAM Zonal Liaison</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Executive Doctrinal Reviewer</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Master Sign-Off · Pleroma Override</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-space-2xs rounded-full bg-tertiary-container/15 text-tertiary-container font-label-sm text-label-sm font-bold flex items-center gap-space-2xs w-fit">
+<span class="material-symbols-outlined text-[14px]">diamond</span> Lambent VIP
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">rate_review</span>
+<span>Reviewing Reel #04 Cutdown</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-2xs text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>@PastorDeeVyne</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-space-xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                    Role Logs
+                  </button>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Sister Grace E. -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-bold">
+                      GE
+                    </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Sister Grace E.</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Motion Graphics Lead</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Lead Motion &amp; Vector Designer</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Template Publish · 4K ProRes Export</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-space-2xs rounded-full bg-primary-container/15 text-primary font-label-sm text-label-sm font-bold flex items-center gap-space-2xs w-fit">
+<span class="material-symbols-outlined text-[14px]">stars</span> Radiant Member
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">animation</span>
+<span>Editing in Photizo Space</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-2xs text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>@GraceVisuals</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-space-xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                    Manage
+                  </button>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Brother Kevin A. -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface font-bold">
+                      KA
+                    </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Brother Kevin A.</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Reel Editor &amp; Transcriber</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Assistant Video Editor</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Draft Edits · Audio Stem Ingest</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-space-2xs rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-space-2xs w-fit">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Spark Member
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">sync</span>
+<span>In Live Review Session</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-2xs text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>@KevinA_LoveWorld</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-space-xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                    Manage
+                  </button>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Deacon Samuel M. -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-bold">
+                      SM
+                    </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-surface-bright ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Deacon Samuel M.</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Archival Coordinator</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">PCDL Vault Archival Liaison</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Vault Management · Offline Sync</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-space-2xs rounded-full bg-primary-container/15 text-primary font-label-sm text-label-sm font-bold flex items-center gap-space-2xs w-fit">
+<span class="material-symbols-outlined text-[14px]">stars</span> Radiant Member
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">cloud_done</span>
+<span>Vault Ingestion (Idle)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-2xs text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>@DeaconSamuelM</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-space-xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                    Manage
+                  </button>
+<button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination & Invite Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Showing 5 of 18 campus team members · 8 active Lambent seats utilized
+        </span>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+            Batch Assign Roles
+          </button>
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-sm text-label-sm font-bold shadow-md transition-all" type="button">
+            + Add Ministry Collaborator
+          </button>
+</div>
+</div>
+</section>
+<!-- 6. Real-Time Activity Ticker & KingsChat Live Feed Footer Bar -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-inner flex flex-wrap items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-2xs text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>LIVE AUDIT STREAM:</span>
+</div>
+<span class="truncate max-w-xl text-on-surface">
+          Pastor DeeVyne added note at 00:01:24:18: <em>"Increase warmth on the aperture bloom by +4% before final satellite bounce."</em>
+</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 font-code-sm text-code-sm">
+<span class="text-secondary">Latency: 24ms (Lagos Master Hub)</span>
+<span>·</span>
+<span class="hover:text-on-surface cursor-pointer">Security Protocol: Active</span>
+</div>
+</div>
+</div>
+</div></main></div><script defer="" src="assets/site.js"></script></body></html>

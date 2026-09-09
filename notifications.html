@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#6a4a00","on-primary-fixed":"#271900","primary-fixed":"#ffdea8","surface-container-high":"#262a33","primary":"#ffda9c","on-surface":"#dfe2ee","surface-container-lowest":"#0a0e16","primary-container":"#f5b942","on-secondary-fixed-variant":"#6e3900","on-secondary-container":"#432100","on-tertiary-fixed":"#001c39","background":"#0f131c","outline-variant":"#504535","secondary-fixed":"#ffdcc3","on-secondary-fixed":"#2f1500","secondary-fixed-dim":"#ffb77d","tertiary-container":"#9dc5ff","surface-container":"#1c2028","secondary":"#ffb77d","on-background":"#dfe2ee","surface-dim":"#0f131c","on-tertiary":"#00315d","tertiary-fixed-dim":"#a4c9ff","tertiary-fixed":"#d4e3ff","on-surface-variant":"#d4c4af","on-primary":"#422d00","tertiary":"#cde0ff","error-container":"#93000a","surface-bright":"#353942","on-tertiary-fixed-variant":"#004883","on-error":"#690005","on-secondary":"#4d2600","on-primary-fixed-variant":"#5e4200","surface-container-low":"#181c24","surface-container-highest":"#31353e","outline":"#9c8f7b","error":"#ffb4ab","on-error-container":"#ffdad6","surface-variant":"#31353e","secondary-container":"#d97707","inverse-surface":"#dfe2ee","primary-fixed-dim":"#f9bc45","inverse-primary":"#7c5800","surface-tint":"#f9bc45","inverse-on-surface":"#2c3039","surface":"#0f131c","on-tertiary-container":"#005193"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"panel-width-inspector":"20rem","space-base":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-3xl":"4rem","space-4xl":"6rem","space-md":"0.75rem","space-2xs":"0.125rem","panel-width-media":"18rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-2xl":"3rem","space-sm":"0.5rem","space-xl":"2rem"},fontFamily:{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"],"display-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"code-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"400"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.4)] z-50 flex flex-col justify-between p-space-base"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs py-space-xs"><img alt="Brand logo. - Primary color: #f5b942 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Photizo</span><span class="font-label-sm text-label-sm text-secondary leading-none mt-space-2xs uppercase tracking-wider">Studio Suite</span></div></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="dashboard.html">Home</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="editor" href="editor.html">Editor</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="templates" href="templates.html">Templates</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="photizo-space" href="storage.html">Photizo Space</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="pcdl-hub" href="pcdl-hub.html">PCDL Hub</a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]" data-path="reels" href="reels.html">Reels</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="community" href="community.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">diversity_3</span><span>Community</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-active="true" data-path="notifications" href="notifications.html">Notifications</a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant">Cloud Storage</span><span class="text-primary font-code-sm text-code-sm">68.4 / 100 GB</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full w-[68%]"></div></div></div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="workspace-settings" href="settings.html">Workspace Settings</a><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_4px_20px_-2px_rgba(245,185,66,0.35)] hover:bg-primary transition-colors" data-path="pricing-upgrade" href="upgrade.html"><span class="material-symbols-outlined text-[18px]">flare</span><span>Upgrade to Radiant</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #f5b942 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="relative w-96 flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full h-9 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search projects, templates, PCDL scriptures, media assets... /" type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[16px]">cloud_done</span><span>Photizo Cloud: Synced</span></div><button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button"><span class="material-symbols-outlined text-tertiary-container text-[18px]">auto_awesome</span><span>Pleroma AI</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container ring-2 ring-surface"></span></button><a class="hover:opacity-80 transition-opacity cursor-pointer" href="profile.html"><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col items-end"><span class="font-label-lg text-label-lg text-on-surface leading-none">Minister David O.</span><span class="flex items-center gap-space-2xs mt-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary"><span class="material-symbols-outlined text-[14px]">stars</span>Radiant Member</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(245,185,66,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></a></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Atmospheric Glow Overlay -->
+<div class="relative w-full overflow-hidden px-space-xl py-space-xl">
+<div class="pointer-events-none absolute -top-40 right-1/4 h-96 w-96 rounded-full bg-gradient-to-br from-primary-container/10 via-secondary/5 to-transparent blur-3xl"></div>
+<div class="pointer-events-none absolute top-1/2 -left-20 h-80 w-80 rounded-full bg-gradient-to-tr from-tertiary-container/10 via-primary/5 to-transparent blur-3xl"></div>
+<div class="relative mx-auto max-w-7xl flex flex-col gap-space-xl">
+<!-- Breadcrumb & Page Meta Ribbon -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Studio Workspace</span>
+<span class="material-symbols-outlined text-outline text-[14px]">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Communications</span>
+<span class="material-symbols-outlined text-outline text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Notifications &amp; Activity Center</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Activity Center &amp; Ministerial Notifications
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              Real-time dispatch stream for Pleroma AI audits, PCDL sermon drops, template royalty remittances, and team collaborations.
+            </p>
+</div>
+<!-- Live Socket Status Badge -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-low shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-container"></span>
+</span>
+<div class="flex items-center gap-space-2xs font-code-sm text-code-sm text-on-surface">
+<span class="text-on-surface-variant">Push Delivery:</span>
+<span class="text-primary font-semibold">Active via KingsChat ID #8849-KC &amp; Live Node Socket</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-Time Metrics Velocity Cards (4-Up Bento) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-base">
+<!-- Metric 1 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Unread Urgent</span>
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-secondary-container/20 text-secondary">
+<span class="material-symbols-outlined text-[18px]">priority_high</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">3</span>
+<span class="font-label-lg text-label-lg text-secondary">Pending Action</span>
+</div>
+<div class="mt-space-2xs flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[14px]">gavel</span>
+<span>Doctrinal sign-offs &amp; export flags</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pleroma AI Approvals</span>
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">99.8%</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Concordance</span>
+</div>
+<div class="mt-space-2xs flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[14px]">task_alt</span>
+<span>14 audio/video reviews cleared today</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Royalty Remittances</span>
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-extrabold">+₦48,250</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Today</span>
+</div>
+<div class="mt-space-2xs flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[14px]">bolt</span>
+<span>Settled automatically to KingsPay</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Cloud Render Jobs</span>
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-tertiary-container/20 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold">2</span>
+<span class="font-label-lg text-label-lg text-tertiary">Processing</span>
+</div>
+<div class="mt-space-2xs flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-tertiary text-[14px]">sync</span>
+<span>Romans 8:11 &amp; Praise Night Reel</span>
+</div>
+</div>
+</div>
+<!-- Controls & Quick Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md p-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<!-- Interactive Category Filter Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs lg:pb-0 scrollbar-none" id="notification-filters">
+<button class="filter-btn px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold shadow-[0_0_12px_-2px_rgba(245,185,66,0.3)] transition-all flex items-center gap-space-xs shrink-0" data-filter="all" type="button">
+<span>All</span>
+<span class="px-1.5 py-0.5 rounded-full bg-on-primary-container/20 text-[10px]">18</span>
+</button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-space-xs shrink-0" data-filter="pleroma" type="button">
+<span>Pleroma AI Audits</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-[10px]">5</span>
+</button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-space-xs shrink-0" data-filter="pcdl" type="button">
+<span>PCDL Drops</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-[10px]">3</span>
+</button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-space-xs shrink-0" data-filter="kingspay" type="button">
+<span>KingsPay &amp; Royalties</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-[10px]">4</span>
+</button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-space-xs shrink-0" data-filter="collab" type="button">
+<span>Collaboration &amp; Team</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-[10px]">4</span>
+</button>
+<button class="filter-btn px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-space-xs shrink-0" data-filter="system" type="button">
+<span>System &amp; Nodes</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-[10px]">2</span>
+</button>
+</div>
+<!-- Utility Trigger Actions -->
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" id="mark-all-read-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">done_all</span>
+<span>Mark All Read</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" title="Delivery Settings &amp; Webhooks" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<span class="hidden sm:inline">Routing</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">clear_all</span>
+<span>Clear Read</span>
+</button>
+</div>
+</div>
+<!-- Main Split Layout (65% Feed / 35% Telemetry & Controls) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- LEFT COLUMN: Notification Stream (col-span-8) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl" id="notifications-container">
+<!-- GROUP 1: TODAY -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Today</span>
+<span class="h-1.5 w-1.5 rounded-full bg-primary-container"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">4 dispatches</span>
+</div>
+<span class="font-code-sm text-code-sm text-primary">GMT +01:00 Live Stream</span>
+</div>
+<!-- Item 1: Pleroma AI Audit (High Priority) -->
+<article class="notification-card group relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row gap-space-lg" data-category="pleroma">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-primary-container"></div>
+<div class="shrink-0 flex items-start">
+<div class="relative flex h-12 w-12 items-center justify-center rounded-xl bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(245,185,66,0.35)]">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+<span class="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-surface-container-lowest text-primary text-[10px] font-bold">100</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/10 font-code-sm text-code-sm text-primary font-bold tracking-wide">PLEROMA AUDIT</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-on-surface-variant">DOZ-VERIFIED</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">12m ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  Pleroma AI Doctrinal Review Completed — 100% Scriptural Concordance
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Your project <span class="text-on-surface font-semibold">“Romans 8:11 Kinetic Rhema Motion Graphic”</span> passed all scriptural concordance checks against the Pastor Chris Digital Archive. Zero doctrinal variance detected across 32 theological marker points.
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-code-sm text-code-sm pt-space-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">grid_view</span> Project #PZ-7712</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lan</span> Render Node Alpha</span>
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">task</span> Zero Hallucination Risk</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-primary shadow-[0_2px_8px_rgba(245,185,66,0.25)] transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Open in Editor</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>View Doctrinal Certificate</span>
+</button>
+<button class="dismiss-btn px-space-sm py-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md ml-auto" type="button">
+                    Dismiss
+                  </button>
+</div>
+</div>
+</article>
+<!-- Item 2: KingsPay Royalties -->
+<article class="notification-card group relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row gap-space-lg" data-category="kingspay">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary"></div>
+<div class="shrink-0 flex items-start">
+<div class="relative flex h-12 w-12 items-center justify-center rounded-xl bg-secondary-container text-on-secondary-container shadow-[0_0_14px_rgba(217,119,6,0.3)]">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-surface-container-lowest text-secondary text-[10px] font-bold">₦</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary/10 font-code-sm text-code-sm text-secondary font-bold tracking-wide">KINGSPAY MONETIZATION</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-on-surface-variant">SETTLED</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">1h 40m ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                  Template Royalty Payout Received — ₦18,500 Auto-Disbursed
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Your broadcast template <span class="text-on-surface font-semibold">“WordFest 2025 Motion Lower-Thirds &amp; Titles”</span> was licensed by 37 campus media directors. Funds automatically settled to your verified KingsPay Wallet (Ref: #KP-99428).
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-code-sm text-code-sm pt-space-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">receipt_long</span> Ref #KP-99428</span>
+<span class="flex items-center gap-1 text-secondary"><span class="material-symbols-outlined text-[14px]">bolt</span> KingsPay Instant Settlement</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-bright transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+<span>View Transaction in Settings</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">analytics</span>
+<span>Template Analytics</span>
+</button>
+<button class="dismiss-btn px-space-sm py-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md ml-auto" type="button">
+                    Dismiss
+                  </button>
+</div>
+</div>
+</article>
+<!-- Item 3: PCDL Audio Stem Drop -->
+<article class="notification-card group relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row gap-space-lg" data-category="pcdl">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-tertiary"></div>
+<div class="shrink-0 flex items-start">
+<div class="relative flex h-12 w-12 items-center justify-center rounded-xl bg-tertiary-container/30 text-tertiary shadow-[0_0_14px_rgba(157,197,255,0.25)]">
+<span class="material-symbols-outlined text-[24px]">graphic_eq</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container/20 font-code-sm text-code-sm text-tertiary font-bold tracking-wide">PCDL CLOUD HUB</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-on-surface-variant">24-TRACK</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">3h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-tertiary transition-colors">
+                  New PCDL Master Release Available: “The Higher Life — Vol 4”
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Pristine sermon audio stems, kinetic Rhema speech-to-text transcripts, and 24-track background instruments are ready for creative cutdowns and reel generation.
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-code-sm text-code-sm pt-space-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">cloud_sync</span> PCDL Cloud Sync</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">folder_zip</span> 2.4 GB Stems Ready</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-tertiary-container/20 hover:bg-tertiary-container/30 text-tertiary font-label-md text-label-md font-semibold transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">download_for_offline</span>
+<span>Import Stems to Editor</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">play_circle</span>
+<span>Preview Audio</span>
+</button>
+<button class="dismiss-btn px-space-sm py-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md ml-auto" type="button">
+                    Dismiss
+                  </button>
+</div>
+</div>
+</article>
+<!-- Item 4: Collaboration Invite -->
+<article class="notification-card group relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row gap-space-lg" data-category="collab">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-primary-container"></div>
+<div class="shrink-0 flex items-start">
+<div class="relative flex h-12 w-12 items-center justify-center rounded-xl bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">group_add</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/10 font-code-sm text-code-sm text-primary font-bold tracking-wide">DIRECTORATE COLLAB</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-on-surface-variant">LMAM TIMELINE</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">5h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  Minister David O. invited you to collaborate on “Praise Night 2025 Broadcast Cut”
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Assigned role: <span class="text-on-surface font-semibold">Lead Video Colorist</span> (Rec.709 4K ProRes grade). Multi-editor LMAM timeline scrub and live audio node synchronization is enabled for this session.
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-code-sm text-code-sm pt-space-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">church</span> Christ Embassy Virtual Zone 1 Media Directorate</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-primary transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">merge</span>
+<span>Accept &amp; Join Timeline</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>View Project Specs</span>
+</button>
+<button class="dismiss-btn px-space-sm py-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md ml-auto" type="button">
+                    Decline
+                  </button>
+</div>
+</div>
+</article>
+</div>
+<!-- GROUP 2: YESTERDAY -->
+<div class="flex flex-col gap-space-md pt-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Yesterday</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">2 dispatches</span>
+</div>
+</div>
+<!-- Item 5: Infrastructure / Storage Alert -->
+<article class="notification-card group relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row gap-space-lg" data-category="system">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-secondary-container"></div>
+<div class="shrink-0 flex items-start">
+<div class="relative flex h-12 w-12 items-center justify-center rounded-xl bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[24px]">cloud_alert</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/20 font-code-sm text-code-sm text-secondary font-bold tracking-wide">STORAGE CAPACITY</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-on-surface-variant">DAEMON NOTICE</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Yesterday, 18:24 UTC</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                  Storage Threshold Warning — Photizo Space at 68.4%
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  You have utilized 68.4 GB of your 100 GB Radiant Broadcast quota. 12 completed 4K ProRes master renders can be offloaded to the Cold Storage Vault to preserve live cache.
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-code-sm text-code-sm pt-space-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">hard_drive</span> 31.6 GB Remaining</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">speed</span> Fast NVMe Cache Healthy</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-bright transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">folder_special</span>
+<span>Manage Photizo Space</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">archive</span>
+<span>Archive to Cold Vault</span>
+</button>
+<button class="dismiss-btn px-space-sm py-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md ml-auto" type="button">
+                    Dismiss
+                  </button>
+</div>
+</div>
+</article>
+<!-- Item 6: Ephemeral Admin Delegation Minted -->
+<article class="notification-card group relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row gap-space-lg" data-category="system">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-primary"></div>
+<div class="shrink-0 flex items-start">
+<div class="relative flex h-12 w-12 items-center justify-center rounded-xl bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">key</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 font-code-sm text-code-sm text-primary font-bold tracking-wide">SUPER ADMIN LEASE</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-code-sm text-code-sm text-on-surface-variant">09-OMEGA PROTOCOL</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Yesterday, 14:18 UTC</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  Ephemeral Admin Delegation Minted (#INV-9921-EX12)
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Single-use 12-hour cryptographic token minted for Pastor Michael B. (Doctrinal &amp; Pleroma Overseer). 09h 44m remaining before delegation lease automatically expires.
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-code-sm text-code-sm pt-space-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lock_clock</span> Lease Expiring: 09h 44m</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shield</span> Air-Gapped Signature Verified</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-md">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">admin_panel_settings</span>
+<span>Inspect in Super Admin Console</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-error font-label-md text-label-md transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">key_off</span>
+<span>Revoke Token</span>
+</button>
+<button class="dismiss-btn px-space-sm py-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md ml-auto" type="button">
+                    Dismiss
+                  </button>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- RIGHT COLUMN: Inspector & Activity Stream Settings (col-span-4) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- CARD 1: Active Push & Webhook Channels -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">cell_tower</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Delivery Channels</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">4 Active</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Channel: KingsChat -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">KingsChat Push</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Instant Priority Dispatch</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+<!-- Channel: CeFlix & Broadcast Relay -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary-container/20 text-secondary">
+<span class="material-symbols-outlined text-[18px]">live_tv</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">CeFlix Broadcast Relay</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Live On-Air Prompts</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+<!-- Channel: Telegram Bot Relay -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="flex h-9 w-9 items-center justify-center rounded-lg bg-tertiary-container/20 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Telegram Relays</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">@PhotizoBot_KC</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+<!-- Channel: Email Digest -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="flex h-9 w-9 items-center justify-center rounded-lg bg-surface-container-highest text-on-surface">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Daily Email Digest</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">08:00 UTC Recap</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+</div>
+<button class="w-full py-space-xs rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs mt-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">webhook</span>
+<span>Manage Webhook Endpoints</span>
+</button>
+</div>
+<!-- CARD 2: Doctrinal Alert Thresholds & Sound Preferences -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">filter_alt</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Alert Thresholds</h2>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">tune</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Doctrinal Audit Sensitivity</span>
+<div class="space-y-2">
+<label class="flex items-center gap-space-sm p-space-xs rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="accent-primary-container" name="sensitivity" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Alert on All Reviews</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Includes 100% pass confirmations &amp; minor tags</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs rounded-lg hover:bg-surface-container cursor-pointer transition-colors">
+<input class="accent-primary-container" name="sensitivity" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Urgent Flagged Cadence Only</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Only dispatches when variance &gt; 0.5%</span>
+</div>
+</label>
+</div>
+<div class="pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Royalty Notification Floor</span>
+<div class="flex items-center justify-between mt-1 p-space-sm rounded-lg bg-surface-container">
+<span class="font-body-sm text-body-sm text-on-surface">Payouts &gt; ₦5,000</span>
+<span class="font-code-sm text-code-sm text-primary">Active</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between p-space-sm rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">volume_up</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Doctrinal Sign-off Chime</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Gentle harmonic bell</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container peer-checked:after:bg-on-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- CARD 3: 24-Hour Live Activity Ledger Preview -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">history</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">24h Audit Ledger</h2>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary font-bold">Node Synced</span>
+</div>
+<!-- Chronological Micro-Timeline -->
+<div class="relative pl-6 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-highest">
+<!-- Log 1 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary-container ring-4 ring-surface-container-low text-on-primary-container text-[10px]">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Render Node Beta Cleared</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">ProRes 422 HQ • Praise Reel 02</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant/70 mt-0.5">24m ago • 197.210.44.12</span>
+</div>
+</div>
+<!-- Log 2 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 flex h-4 w-4 items-center justify-center rounded-full bg-secondary ring-4 ring-surface-container-low text-on-secondary text-[10px]">
+<span class="material-symbols-outlined text-[10px]">download</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Stem Download Authorized</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">PCDL Vol 4 • 24 Audio Stems</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant/70 mt-0.5">2h ago • Workstation OS-X</span>
+</div>
+</div>
+<!-- Log 3 -->
+<div class="relative">
+<span class="absolute -left-6 top-1 flex h-4 w-4 items-center justify-center rounded-full bg-surface-container-highest ring-4 ring-surface-container-low text-on-surface text-[10px]">
+<span class="material-symbols-outlined text-[10px]">lock_open</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">KingsChat SSO Authenticated</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Session #KC-2994-Auth</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant/70 mt-0.5">5h ago • Lagos, NG</span>
+</div>
+</div>
+</div>
+<button class="w-full py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors text-center" type="button">
+              View Full Immutable Log in Super Admin
+            </button>
+</div>
+</div>
+</div>
+<!-- Ministerial Help / Custom Webhook Router Footer -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">
+              Need custom notification webhook routing for your Zone or Directorate?
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Connect directly with our 24/7 Ministerial Production Desk on KingsChat for custom LoveWorld Cloud bridge setup.
+            </p>
+</div>
+</div>
+<button class="shrink-0 px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-primary shadow-[0_2px_12px_rgba(245,185,66,0.3)] transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>Contact Production Desk</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Client-Side Tab Filtering Logic
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const notificationCards = document.querySelectorAll('.notification-card');
+  const markAllBtn = document.getElementById('mark-all-read-btn');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Toggle button styles
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_12px_-2px_rgba(245,185,66,0.3)]', 'font-bold');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_12px_-2px_rgba(245,185,66,0.3)]', 'font-bold');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+      const filterVal = btn.getAttribute('data-filter');
+      notificationCards.forEach(card => {
+        if (filterVal === 'all' || card.getAttribute('data-category') === filterVal) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Client-Side Dismiss Logic
+  const dismissBtns = document.querySelectorAll('.dismiss-btn');
+  dismissBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.target.closest('.notification-card');
+      if (card) {
+        card.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(-8px)';
+        setTimeout(() => {
+          card.remove();
+        }, 200);
+      }
+    });
+  });
+
+  // Mark all read mock interaction
+  if (markAllBtn) {
+    markAllBtn.addEventListener('click', () => {
+      notificationCards.forEach(card => {
+        card.classList.remove('bg-surface-container-low');
+        card.classList.add('bg-surface-container/60');
+      });
+      markAllBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">done</span><span>All Caught Up</span>';
+    });
+  }
+</script></main></div><script defer="" src="assets/site.js"></script></body></html>

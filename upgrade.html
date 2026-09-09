@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#6a4a00","on-primary-fixed":"#271900","primary-fixed":"#ffdea8","surface-container-high":"#262a33","primary":"#ffda9c","on-surface":"#dfe2ee","surface-container-lowest":"#0a0e16","primary-container":"#f5b942","on-secondary-fixed-variant":"#6e3900","on-secondary-container":"#432100","on-tertiary-fixed":"#001c39","background":"#0f131c","outline-variant":"#504535","secondary-fixed":"#ffdcc3","on-secondary-fixed":"#2f1500","secondary-fixed-dim":"#ffb77d","tertiary-container":"#9dc5ff","surface-container":"#1c2028","secondary":"#ffb77d","on-background":"#dfe2ee","surface-dim":"#0f131c","on-tertiary":"#00315d","tertiary-fixed-dim":"#a4c9ff","tertiary-fixed":"#d4e3ff","on-surface-variant":"#d4c4af","on-primary":"#422d00","tertiary":"#cde0ff","error-container":"#93000a","surface-bright":"#353942","on-tertiary-fixed-variant":"#004883","on-error":"#690005","on-secondary":"#4d2600","on-primary-fixed-variant":"#5e4200","surface-container-low":"#181c24","surface-container-highest":"#31353e","outline":"#9c8f7b","error":"#ffb4ab","on-error-container":"#ffdad6","surface-variant":"#31353e","secondary-container":"#d97707","inverse-surface":"#dfe2ee","primary-fixed-dim":"#f9bc45","inverse-primary":"#7c5800","surface-tint":"#f9bc45","inverse-on-surface":"#2c3039","surface":"#0f131c","on-tertiary-container":"#005193"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"panel-width-inspector":"20rem","space-base":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","space-3xl":"4rem","space-4xl":"6rem","space-md":"0.75rem","space-2xs":"0.125rem","panel-width-media":"18rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-2xl":"3rem","space-sm":"0.5rem","space-xl":"2rem"},fontFamily:{"label-sm":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"],"display-xl-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-xl":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"code-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"display-lg-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"400"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.4)] z-50 flex flex-col justify-between p-space-base"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs py-space-xs"><img alt="Brand logo. - Primary color: #f5b942 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Photizo</span><span class="font-label-sm text-label-sm text-secondary leading-none mt-space-2xs uppercase tracking-wider">Studio Suite</span></div></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="dashboard.html">Home</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="editor" href="editor.html">Editor</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="templates" href="templates.html">Templates</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="photizo-space" href="storage.html">Photizo Space</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="pcdl-hub" href="pcdl-hub.html">PCDL Hub</a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)]" data-path="reels" href="reels.html">Reels</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="community" href="community.html"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">diversity_3</span><span>Community</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="notifications" href="notifications.html">Notifications</a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant">Cloud Storage</span><span class="text-primary font-code-sm text-code-sm">68.4 / 100 GB</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary-container rounded-full w-[68%]"></div></div></div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="workspace-settings" href="settings.html">Workspace Settings</a><a class="flex items-center justify-center gap-space-sm w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[0_4px_20px_-2px_rgba(245,185,66,0.35)] hover:bg-primary transition-colors" data-active="true" data-path="pricing-upgrade" href="payment.html"><span class="material-symbols-outlined text-[18px]">flare</span><span>Upgrade to Radiant</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #f5b942 - Font: plusJakartaSans - Mode: dark - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/><div class="relative w-96 flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full h-9 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search projects, templates, PCDL scriptures, media assets... /" type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[16px]">cloud_done</span><span>Photizo Cloud: Synced</span></div><button class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button"><span class="material-symbols-outlined text-tertiary-container text-[18px]">auto_awesome</span><span>Pleroma AI</span></button><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container ring-2 ring-surface"></span></button><a class="hover:opacity-80 transition-opacity cursor-pointer" href="profile.html"><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col items-end"><span class="font-label-lg text-label-lg text-on-surface leading-none">Minister David O.</span><span class="flex items-center gap-space-2xs mt-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary"><span class="material-symbols-outlined text-[14px]">stars</span>Radiant Member</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(245,185,66,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></a></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Modal Wrapper with Atmosphere -->
+<div class="relative w-full px-space-md sm:px-space-xl lg:px-space-2xl py-space-xl min-w-0">
+<!-- Atmospheric Radiant Backdrop Glows -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-gradient-to-b from-primary-container/15 via-primary/5 to-transparent blur-3xl pointer-events-none -z-10 rounded-full"></div>
+<div class="absolute top-96 right-12 w-96 h-96 bg-tertiary-container/10 blur-3xl pointer-events-none -z-10 rounded-full"></div>
+<div class="absolute bottom-24 left-10 w-96 h-96 bg-secondary-container/10 blur-3xl pointer-events-none -z-10 rounded-full"></div>
+<!-- Top Floating Modal Bar with Navigation & Dismiss -->
+<div class="flex items-center justify-between pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors font-label-md text-label-md" data-path="dashboard" href="dashboard.html">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Studio</span>
+</a>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">flare</span>
+<span>Photizo Tier Matrix v4.2</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span>KingsPay Encrypted Tunnel Active</span>
+</div>
+<a class="flex items-center justify-center w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="dashboard.html" title="Close Modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</a>
+</div>
+</div>
+<!-- Header Section -->
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto pt-space-xs pb-space-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container/10 text-primary-fixed mb-space-md font-label-md text-label-md tracking-wide uppercase">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+<span>Studio Suite Membership Upgrades</span>
+</div>
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface font-extrabold max-w-3xl">
+        Elevate Your Ministry <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-fixed-dim to-secondary-fixed-dim">Production</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-md max-w-2xl">
+        Unleash high-definition kinetic Rhema video rendering, unlimited Pleroma AI doctrinal reviews, and multi-track PCDL audio stem cutdowns across worldwide distribution nodes.
+      </p>
+<!-- Billing Cycle & Currency Switchers Panel -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-xl p-space-xs rounded-xl bg-surface-container-low shadow-xl">
+<!-- Billing Interval Toggle -->
+<div class="flex items-center p-space-2xs rounded-lg bg-surface-container">
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" id="btn-monthly" onclick="setBilling('monthly')" type="button">
+            Billed Monthly
+          </button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-bold shadow-md" id="btn-annual" onclick="setBilling('annual')" type="button">
+<span>Billed Annually</span>
+<span class="px-space-xs py-space-2xs rounded-full bg-on-primary-container text-primary-fixed font-label-sm text-label-sm">Save 20% + 50 ESP</span>
+</button>
+</div>
+<div class="h-6 w-px bg-surface-container-highest hidden sm:block"></div>
+<!-- Currency Picker -->
+<div class="flex items-center p-space-2xs rounded-lg bg-surface-container">
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all bg-surface-container-highest text-on-surface font-semibold shadow-sm" id="curr-naira" onclick="setCurrency('naira')" type="button">
+            Naira (₦)
+          </button>
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" id="curr-espees" onclick="setCurrency('espees')" type="button">
+            Espees (ESP)
+          </button>
+</div>
+</div>
+</div>
+<!-- Tiers Grid (3 Bespoke Columns) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-stretch max-w-7xl mx-auto">
+<!-- Tier 1: Spark (Base Tier) -->
+<div class="relative flex flex-col justify-between p-space-xl rounded-xl bg-surface-container-low transition-all duration-300 hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Spark</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Tier 01</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-md font-bold">Base Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+            For aspiring creators, campus fellowships, and local media interns beginning their production journey.
+          </p>
+<div class="my-space-lg pb-space-md">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-display-lg text-display-lg text-on-surface font-extrabold tracking-tight">Free</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ forever</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs">No credit card or commitment required</p>
+</div>
+<!-- Feature Matrix List -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>15 GB</strong> Photizo Space Cloud Storage</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">720p &amp; 1080p Standard SDR exports</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>25 Pleroma AI</strong> doctrinal reviews/month</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Access to public community praise templates</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0 mt-0.5">water_drop</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Watermarked draft preview playback</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xl mt-space-lg">
+<button class="w-full py-space-sm px-space-md rounded-lg bg-surface-container-highest text-on-surface-variant font-label-lg text-label-lg font-medium cursor-not-allowed opacity-75" disabled="" type="button">
+            Default Plan
+          </button>
+</div>
+</div>
+<!-- Tier 2: Radiant (Most Popular / Current Active for Minister David O.) -->
+<div class="relative flex flex-col justify-between p-space-xl rounded-xl bg-surface-container shadow-[0_0_36px_-6px_rgba(245,185,66,0.35)] -translate-y-2 transition-all duration-300">
+<!-- Luminous Corner Beam Aura -->
+<div class="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-primary-container/25 via-primary/10 to-transparent rounded-tr-xl pointer-events-none"></div>
+<div>
+<!-- Header with Active Status & Popular Badge -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-[0_0_12px_rgba(245,185,66,0.5)]">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span>MOST POPULAR</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-high font-code-sm text-code-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>ACTIVE TIER</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-md font-extrabold flex items-center gap-space-xs">
+<span>Radiant Broadcast</span>
+<span class="material-symbols-outlined text-primary text-[22px]">flare</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+            For campus media directors, lead broadcast editors, and active digital ministry creators requiring pristine delivery.
+          </p>
+<!-- Price Display -->
+<div class="my-space-lg pb-space-md">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-display-lg text-display-lg text-primary font-extrabold tracking-tight" id="radiant-price">₦18,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="radiant-cycle">/ month</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary mt-space-xs" id="radiant-subnote">
+              Billed annually at ₦177,600 (Equiv. ₦14,800/mo)
+            </p>
+</div>
+<!-- Feature List -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>100 GB</strong> Photizo Space High-Speed Storage</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>4K UHD 60fps</strong> ProRes &amp; Rec.709 color pass</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>350 Pleroma AI</strong> Doctrinal Review analyses/mo</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Multi-track PCDL audio stem isolation</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Kinetic Rhema subtitle generator &amp; lower-thirds</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>15% Creator Royalty</strong> split on Template Hub</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">KingsChat direct broadcast channel streaming</span>
+</div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-space-xl mt-space-lg flex flex-col gap-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between font-label-sm text-label-sm mb-space-xs">
+<span class="text-on-surface-variant">Current Renews:</span>
+<span class="text-primary font-semibold">28 Nov 2024 (Auto)</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="w-full py-space-sm px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors font-semibold" type="button">
+              Manage Billing
+            </button>
+<button class="w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md transition-colors font-bold shadow-[0_4px_16px_rgba(245,185,66,0.3)]" type="button">
+              Extend Pass
+            </button>
+</div>
+</div>
+</div>
+<!-- Tier 3: Lambent Diamond VIP (Premier Tier) -->
+<div class="relative flex flex-col justify-between p-space-xl rounded-xl bg-surface-container-low transition-all duration-300 hover:bg-surface-container shadow-[0_8px_32px_-4px_rgba(0,0,0,0.6)]">
+<!-- Prismatic Iridescent Corner Glow -->
+<div class="absolute top-0 right-0 w-52 h-52 bg-gradient-to-br from-tertiary-container/20 via-tertiary/5 to-transparent rounded-tr-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-gradient-to-r from-tertiary-container/30 to-secondary-container/30 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+<span>APOSTOLIC SUITE</span>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary">VIP VIP</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-space-md font-extrabold flex items-center gap-space-xs">
+<span>Lambent Diamond</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">auto_awesome</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+            For ministry headquarters, television broadcast networks (LoveWorld, CeFlix), and regional mega-campus studios.
+          </p>
+<!-- Price Display -->
+<div class="my-space-lg pb-space-md">
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-display-lg text-display-lg text-tertiary font-extrabold tracking-tight" id="diamond-price">₦55,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="diamond-cycle">/ month</span>
+</div>
+<p class="font-label-sm text-label-sm text-tertiary-container mt-space-xs" id="diamond-subnote">
+              Billed annually at ₦528,000 (Equiv. ₦44,000/mo)
+            </p>
+</div>
+<!-- Feature List -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>1 TB Photizo Vault</strong> with cold media archival</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>8K HDR 120fps Master</strong> uncompressed rendering</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Unlimited Pleroma AI</strong> Doctrinal Review analyses</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Instant ministerial doctrinal override sign-off lock</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">LMAM protocol multi-editor live scrub (20 seats)</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>20% Creator Royalty</strong> + KingsPay auto-disbursement</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Dedicated priority GPU broadcast render cluster</span>
+</div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-space-xl mt-space-lg">
+<button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg bg-gradient-to-r from-primary-container via-primary to-secondary-container text-on-primary-container hover:opacity-95 font-label-lg text-label-lg font-bold shadow-[0_6px_24px_rgba(245,185,66,0.4)] transition-all" data-navigate="payment.html" type="button">
+<span class="material-symbols-outlined text-[18px]">upgrade</span>
+<span>Upgrade to Lambent Diamond</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Production Visual Accent / Live Node Performance Strip -->
+<div class="max-w-7xl mx-auto my-space-2xl p-space-lg rounded-xl bg-surface-container-low shadow-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg items-center">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">speed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Render Velocity</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">12.4x Real-Time</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[24px]">cloud_sync</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">PCDL Cloud Ingest</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Direct Stem Tap</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[24px]">fact_check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pleroma Doctrinal Index</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">99.8% Accuracy</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface text-[24px]">cast_connected</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">CeFlix Live Nodes</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Zero Latency</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Visual Feature Spotlight (Bento Strip) -->
+<div class="max-w-7xl mx-auto mb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Spotlight Card 1: Studio Rendering Pipeline -->
+<div class="lg:col-span-7 relative p-space-xl rounded-xl bg-surface-container-low overflow-hidden flex flex-col justify-between">
+<div class="relative z-10">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider mb-space-sm">
+<span class="material-symbols-outlined text-[16px]">movie_edit</span>
+<span>Ultra-Res Transmission</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-on-surface font-bold max-w-lg">
+              Kinetic Rhema Engine &amp; 8K HDR Color Grading
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm max-w-md">
+              Synchronize dynamic animated praise scriptures directly with acoustic PCDL stems without loss of frame resolution or tonal depth.
+            </p>
+</div>
+<div class="relative z-10 mt-space-xl pt-space-md flex flex-wrap gap-space-md">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">high_quality</span>
+<span>Apple ProRes 4444 XQ</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">hdr_on</span>
+<span>BT.2020 Wide Color Gamut</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]">layers</span>
+<span>24 Multi-Track Stem Isolation</span>
+</div>
+</div>
+<!-- Decorative Glow Circle -->
+<div class="absolute -bottom-16 -right-16 w-80 h-80 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+</div>
+<!-- Spotlight Card 2: Pleroma AI Doctrinal Review Engine -->
+<div class="lg:col-span-5 relative p-space-xl rounded-xl bg-surface-container-low overflow-hidden flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase tracking-wider mb-space-sm">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Automated Scriptural Verification</span>
+</div>
+<h4 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+              Pleroma AI Review Pipeline
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              Automated frame-by-frame scriptural analysis flags translation discrepancies, scripture reference citations, and aligns spoken words with verified ministry texts.
+            </p>
+</div>
+<!-- Graphic Gauge / Metric Card -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Doctrinal Confidence Index</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-space-2xs">Pastor Chris Digital Archive Match</span>
+</div>
+<div class="flex items-center justify-center w-14 h-14 rounded-full bg-tertiary-container/20 text-tertiary font-headline-sm text-headline-sm font-bold">
+              100%
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Feature Comparison Matrix -->
+<div class="max-w-7xl mx-auto pt-space-lg pb-space-2xl">
+<div class="text-center mb-space-xl">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          Detailed Specification Matrix
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Comprehensive comparison across compute, storage, doctrinal engines, and global broadcasting.
+        </p>
+</div>
+<div class="overflow-x-auto rounded-xl bg-surface-container-low shadow-xl">
+<table class="w-full text-left font-body-sm text-body-sm">
+<!-- Table Head -->
+<thead>
+<tr class="bg-surface-container-high text-on-surface">
+<th class="py-space-md px-space-lg font-label-md text-label-md uppercase tracking-wider w-2/5">Capability</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-center w-1/5">Spark</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-center w-1/5 text-primary bg-primary-container/10">Radiant</th>
+<th class="py-space-md px-space-md font-label-md text-label-md uppercase tracking-wider text-center w-1/5 text-tertiary">Lambent Diamond</th>
+</tr>
+</thead>
+<!-- Table Body -->
+<tbody class="divide-y-0 text-on-surface-variant">
+<!-- Category: Storage & Rendering -->
+<tr class="bg-surface-container">
+<td class="py-space-xs px-space-lg font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary" colspan="4">
+                1. Storage, Compute &amp; Rendering Priority
+              </td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">Photizo Space Cloud Vault</td>
+<td class="py-space-sm px-space-md text-center">15 GB Standard</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">100 GB High-Throughput</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">1 TB Unlimited Vault</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">Maximum Render Resolution</td>
+<td class="py-space-sm px-space-md text-center">1080p SDR @ 30fps</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">4K UHD @ 60fps ProRes</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">8K HDR Master @ 120fps</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">Render Queue Priority Tier</td>
+<td class="py-space-sm px-space-md text-center">Standard Public Queue</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">Accelerated Priority</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">Dedicated GPU Cluster Node</td>
+</tr>
+<!-- Category: Pleroma AI & Scriptural Fidelity -->
+<tr class="bg-surface-container">
+<td class="py-space-xs px-space-lg font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary" colspan="4">
+                2. Pleroma AI Review &amp; Scripture Automation
+              </td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">Pleroma AI Doctrinal Review Passes</td>
+<td class="py-space-sm px-space-md text-center">25 scans / mo</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">350 scans / mo</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">Unlimited Real-Time Passes</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">Kinetic Rhema Lower-Thirds Generator</td>
+<td class="py-space-sm px-space-md text-center">Basic Static Fonts</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">Dynamic Kinetic Typo Engine</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">Bespoke 3D Vector Type Engine</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">PCDL Automated Sermon Cutdowns</td>
+<td class="py-space-sm px-space-md text-center">—</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">50 Reels / mo</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">Unlimited Multi-Platform Cutdowns</td>
+</tr>
+<!-- Category: Team Collaboration & Governance -->
+<tr class="bg-surface-container">
+<td class="py-space-xs px-space-lg font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary" colspan="4">
+                3. Collaboration &amp; Ecclesiastical Governance
+              </td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">Workspace Director &amp; Editor Seats</td>
+<td class="py-space-sm px-space-md text-center">1 Editor</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">3 Concurrent Editors</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">Up to 20 Campus Director Seats</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">LMAM Protocol Live Timeline Scrub</td>
+<td class="py-space-sm px-space-md text-center">—</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">Local Cloud Sync</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">Global Zero-Latency Scrub</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">Ministerial Doctrinal Override Lock</td>
+<td class="py-space-sm px-space-md text-center">—</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">Standard Lock</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">Multi-Signature Episcopal Lock</td>
+</tr>
+<!-- Category: Ecosystem & Distribution -->
+<tr class="bg-surface-container">
+<td class="py-space-xs px-space-lg font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary" colspan="4">
+                4. Distribution, PCDL Audio Stems &amp; Monetization
+              </td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">Template Hub Creator Royalty Split</td>
+<td class="py-space-sm px-space-md text-center">0%</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">15% Net Royalty</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">20% Net Royalty + Fast Payout</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-sm px-space-lg text-on-surface font-medium">CeFlix Broadcast &amp; KingsChat Ingest</td>
+<td class="py-space-sm px-space-md text-center">Manual Export</td>
+<td class="py-space-sm px-space-md text-center text-on-surface font-semibold bg-primary-container/5">Direct 1-Click Stream Relay</td>
+<td class="py-space-sm px-space-md text-center text-tertiary font-semibold">Dedicated SRT/RTMP Broadcaster Pass</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Guarantee & Trust Badges Footer Bar -->
+<div class="max-w-7xl mx-auto mt-space-md mb-space-xl p-space-lg rounded-xl bg-surface-container-low shadow-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px]">lock</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">KingsPay Verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">256-bit encrypted transaction tunnel</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px]">published_with_changes</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Zero Studio Downtime</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant seat and GPU provisioning</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px]">event_repeat</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Flexible Governance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Upgrade, downgrade, or cancel anytime</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px]">headset_mic</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">24/7 Production Desk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dedicated live broadcast technical staff</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript for Billing and Currency Toggling -->
+<script>
+    (function() {
+      let currentBilling = 'annual'; // 'monthly' | 'annual'
+      let currentCurrency = 'naira'; // 'naira' | 'espees'
+
+      const pricingTable = {
+        naira: {
+          monthly: {
+            radiant: { price: '₦18,500', cycle: '/ month', note: 'Billed monthly (Cancel anytime)' },
+            diamond: { price: '₦55,000', cycle: '/ month', note: 'Billed monthly (Cancel anytime)' }
+          },
+          annual: {
+            radiant: { price: '₦14,800', cycle: '/ mo (annual)', note: 'Billed annually at ₦177,600 (Save 20%)' },
+            diamond: { price: '₦44,000', cycle: '/ mo (annual)', note: 'Billed annually at ₦528,000 (Save 20%)' }
+          }
+        },
+        espees: {
+          monthly: {
+            radiant: { price: '25 ESP', cycle: '/ month', note: 'Billed monthly in KingsPay Espees' },
+            diamond: { price: '75 ESP', cycle: '/ month', note: 'Billed monthly in KingsPay Espees' }
+          },
+          annual: {
+            radiant: { price: '20 ESP', cycle: '/ mo (annual)', note: 'Billed annually at 240 ESP (+ 50 ESP bonus)' },
+            diamond: { price: '60 ESP', cycle: '/ mo (annual)', note: 'Billed annually at 720 ESP (+ 150 ESP bonus)' }
+          }
+        }
+      };
+
+      function updatePricingDisplay() {
+        const radiantData = pricingTable[currentCurrency][currentBilling].radiant;
+        const diamondData = pricingTable[currentCurrency][currentBilling].diamond;
+
+        const radiantPriceEl = document.getElementById('radiant-price');
+        const radiantCycleEl = document.getElementById('radiant-cycle');
+        const radiantNoteEl = document.getElementById('radiant-subnote');
+
+        const diamondPriceEl = document.getElementById('diamond-price');
+        const diamondCycleEl = document.getElementById('diamond-cycle');
+        const diamondNoteEl = document.getElementById('diamond-subnote');
+
+        if (radiantPriceEl) radiantPriceEl.textContent = radiantData.price;
+        if (radiantCycleEl) radiantCycleEl.textContent = radiantData.cycle;
+        if (radiantNoteEl) radiantNoteEl.textContent = radiantData.note;
+
+        if (diamondPriceEl) diamondPriceEl.textContent = diamondData.price;
+        if (diamondCycleEl) diamondCycleEl.textContent = diamondData.cycle;
+        if (diamondNoteEl) diamondNoteEl.textContent = diamondData.note;
+      }
+
+      window.setBilling = function(type) {
+        currentBilling = type;
+        const btnMonthly = document.getElementById('btn-monthly');
+        const btnAnnual = document.getElementById('btn-annual');
+
+        if (type === 'annual') {
+          btnAnnual.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-bold shadow-md';
+          btnMonthly.className = 'px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface';
+        } else {
+          btnMonthly.className = 'px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-bold shadow-md';
+          btnAnnual.className = 'flex items-center gap-space-xs px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface';
+        }
+        updatePricingDisplay();
+      };
+
+      window.setCurrency = function(curr) {
+        currentCurrency = curr;
+        const currNaira = document.getElementById('curr-naira');
+        const currEspees = document.getElementById('curr-espees');
+
+        if (curr === 'naira') {
+          currNaira.className = 'px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all bg-surface-container-highest text-on-surface font-semibold shadow-sm';
+          currEspees.className = 'px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface';
+        } else {
+          currEspees.className = 'px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all bg-surface-container-highest text-on-surface font-semibold shadow-sm';
+          currNaira.className = 'px-space-md py-space-xs rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface';
+        }
+        updatePricingDisplay();
+      };
+
+      // Set initial defaults
+      updatePricingDisplay();
+    })();
+  </script>
+</div></main></div><script defer="" src="assets/site.js"></script></body></html>

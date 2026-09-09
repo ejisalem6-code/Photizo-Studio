@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="pcdlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF"/>
+      <stop offset="50%" stop-color="#3A7BD5"/>
+      <stop offset="100%" stop-color="#9A30E6"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#BD00FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square app icon frame with crisp white background -->
+  <rect width="100" height="100" rx="22" fill="#FFFFFF"/>
+  
+  <!-- Swirling concentric orbital rings in teal-to-purple gradient -->
+  <g transform="translate(50, 50)">
+    <!-- Outer concentric swirling arc -->
+    <path d="M-36 0 A36 36 0 1 1 25 25" stroke="url(#ringGrad)" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+    
+    <!-- Middle swirling circular ring -->
+    <path d="M-27 8 A28 28 0 1 1 28 -4" stroke="url(#ringGrad)" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.8"/>
+    
+    <!-- Inner glowing circular swirl -->
+    <circle cx="0" cy="0" r="21" fill="url(#pcdlGrad)"/>
+    
+    <!-- Centered white triangular play button motif -->
+    <polygon points="-5,-8 -5,8 9,0" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#f5b942", "error-container": "#93000a", "surface-tint": "#f9bc45", "on-background": "#dfe2ee", "on-primary-fixed": "#271900", "outline": "#9c8f7b", "secondary-fixed": "#ffdcc3", "on-error-container": "#ffdad6", "on-tertiary-container": "#005193", "secondary-container": "#d97707", "on-tertiary-fixed-variant": "#004883", "surface-variant": "#31353e", "inverse-surface": "#dfe2ee", "on-surface": "#dfe2ee", "inverse-on-surface": "#2c3039", "surface-bright": "#353942", "tertiary-fixed-dim": "#a4c9ff", "surface-container-high": "#262a33", "background": "#0f131c", "outline-variant": "#504535", "tertiary": "#cde0ff", "on-secondary": "#4d2600", "on-secondary-fixed-variant": "#6e3900", "surface-container-lowest": "#0a0e16", "on-primary": "#422d00", "error": "#ffb4ab", "inverse-primary": "#7c5800", "secondary-fixed-dim": "#ffb77d", "secondary": "#ffb77d", "on-surface-variant": "#d4c4af", "surface-container-low": "#181c24", "on-secondary-container": "#432100", "on-secondary-fixed": "#2f1500", "surface-container-highest": "#31353e", "primary-fixed-dim": "#f9bc45", "on-error": "#690005", "on-tertiary-fixed": "#001c39", "tertiary-container": "#9dc5ff", "surface-dim": "#0f131c", "on-tertiary": "#00315d", "surface-container": "#1c2028", "surface": "#0f131c", "primary-fixed": "#ffdea8", "on-primary-container": "#6a4a00", "tertiary-fixed": "#d4e3ff", "on-primary-fixed-variant": "#5e4200", "primary": "#ffda9c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-base": "1rem", "space-md": "0.75rem", "space-xs": "0.25rem", "space-4xl": "6rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "space-2xs": "0.125rem", "space-sm": "0.5rem", "space-3xl": "4rem", "panel-width-inspector": "20rem", "panel-width-media": "18rem" }, "fontFamily": { "display-xl": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "display-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "code-sm": ["Inter"], "label-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"] }, "fontSize": { "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "display-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "700" }] } } } }</script><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-md group" data-path="home" href="index.html"><div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-container to-secondary-container flex items-center justify-center shadow-[0_0_16px_-2px_rgba(245,185,66,0.3)] group-hover:shadow-[0_0_24px_rgba(245,185,66,0.5)] transition-all"><span class="material-symbols-outlined text-on-primary-container text-headline-sm">flare</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Photizo Studio</span><span class="font-label-sm text-label-sm text-on-surface-variant">Illuminate Every Frame</span></div></a><nav class="hidden lg:flex items-center gap-space-xl" data-active-classes="text-primary-container font-semibold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="features" href="index.html#features">Features</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="templates" href="templates.html">Templates</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="pcdl-hub" href="pcdl-hub.html">PCDL Hub</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="pricing" href="index.html#pricing">Pricing</a></nav><div class="flex items-center gap-space-base"><a class="hidden sm:inline-flex font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors px-space-base py-space-sm" data-path="login" href="login.html">Login</a><a class="relative inline-flex items-center justify-center px-space-lg py-space-sm font-label-lg text-label-lg text-on-primary-container bg-gradient-to-r from-primary-container via-primary-fixed-dim to-secondary-container rounded-xl shadow-[0_4px_20px_-2px_rgba(245,185,66,0.45)] hover:shadow-[0_0_24px_rgba(245,185,66,0.6)] transition-all group" data-active="true" data-path="get-started" href="signup.html"><span class="flex items-center gap-space-xs">Get Started Free<span class="material-symbols-outlined text-label-lg group-hover:translate-x-0.5 transition-transform">arrow_forward</span></span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Dynamic Atmospheric Glow Overlay -->
+<div class="relative w-full overflow-hidden">
+<!-- Ambient Radial Flares -->
+<div class="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[720px] h-[480px] bg-gradient-to-b from-primary-container/15 via-secondary-container/5 to-transparent blur-[120px] rounded-full"></div>
+<div class="pointer-events-none absolute top-1/3 -left-32 w-80 h-80 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="pointer-events-none absolute top-2/3 -right-32 w-96 h-96 bg-secondary/10 blur-[110px] rounded-full"></div>
+<div class="max-w-5xl mx-auto px-gutter-mobile lg:px-gutter-desktop py-space-xl lg:py-space-3xl relative z-10">
+<!-- Top Micro-Header / Context Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md mb-space-2xl">
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-xl p-1 bg-surface-container-high shadow-lg flex items-center justify-center">
+<img alt="Photizo Studio Emblem" class="w-full h-full object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida/AEtjO1VrkvDFuIHHTYrrgj9jYAS4yWGukP-1MXmngj7W-8BILprON3Q6CFOshf455am8BMSpRdKpSagoMbN2jDjatiCGnqYuQ2rsOFEUEF__WqKU_OUtpeuoS2dauz7deTeO2ydRc9GF_X3dTsZ6Fxd2J6TNasLUARfWmQotWVwlMxKTLDgtc05UtUGOcNID8vKmXTlgGbBlP8YSoj-G_e8zGJ2a2ZgvBrksa1we4zGWqYESktv_727EqtkqCA"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-surface flex items-center gap-space-2xs">
+              Photizo Studio
+              <span class="px-1.5 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-sm text-label-sm uppercase tracking-wider ml-1">Suite v3</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Luminous Creation Suite for Modern Media</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant bg-surface-container-low px-space-base py-space-xs rounded-full">
+<span class="">Already Have an Account?</span>
+<a class="font-label-lg text-label-lg text-primary-container hover:text-primary transition-colors flex items-center gap-space-2xs" data-path="login" href="login.html">
+            Sign In <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Stepper Progress Indicator -->
+<div class="w-full bg-surface-container-low rounded-2xl p-space-base mb-space-xl shadow-sm">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md" id="stepperNav">
+<!-- Step 1 (Active) -->
+<div class="step-indicator-item flex items-center gap-space-sm p-space-xs rounded-xl bg-surface-container text-on-surface transition-all cursor-pointer" onclick="switchStep(1)">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg flex items-center justify-center font-bold shadow-md">
+              1
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Sign-up Method</span>
+<span class="font-body-sm text-label-sm text-primary-container truncate font-medium">Active Step</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-indicator-item flex items-center gap-space-sm p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container/60 transition-all cursor-pointer" onclick="switchStep(2)">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center">
+              2
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant truncate">Credentials</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant/70 truncate">Passcode &amp; Key</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-indicator-item flex items-center gap-space-sm p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container/60 transition-all cursor-pointer" onclick="switchStep(3)">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center">
+              3
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant truncate">Creator Profile</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant/70 truncate">Avatar &amp; Handle</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="step-indicator-item flex items-center gap-space-sm p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container/60 transition-all cursor-pointer" onclick="switchStep(4)">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center">
+              4
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant truncate">Creative Tier</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant/70 truncate">Spark / Radiant</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Master Onboarding Shell -->
+<div class="bg-surface-container-low rounded-3xl p-space-lg lg:p-space-2xl relative shadow-xl">
+<!-- Top Radiant Shimmer Line -->
+<div class="absolute top-0 left-12 right-12 h-0.5 bg-gradient-to-r from-transparent via-primary-container to-transparent opacity-40"></div>
+<!-- ================= STEP 1: METHOD SELECTION ================= -->
+<div class="step-pane flex flex-col gap-space-xl" id="step-pane-1">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container">Sacred Production Engine</span>
+<h1 class="font-headline-lg text-headline-lg lg:font-display-lg lg:text-display-lg text-on-surface">Begin Your Illumination</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Join over 450,000 creators, ministers, and visual editors crafting high-radiance content across the global ministry ecosystem.
+            </p>
+</div>
+<!-- 3 Prominent Selectable Sign-Up Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg pt-space-sm">
+<!-- Method 1: KingsChat (Featured) -->
+<div class="group relative flex flex-col justify-between bg-surface-container rounded-2xl p-space-lg hover:bg-surface-container-high transition-all shadow-md hover:shadow-primary-container/10 hover:-translate-y-1 cursor-pointer" onclick="switchStep(2)">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary-container to-secondary-container px-space-md py-0.5 rounded-full text-on-primary-container font-label-sm text-label-sm font-bold shadow-md uppercase tracking-wider">
+                Recommended
+              </div>
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-tertiary-container/30 to-surface-container-high flex items-center justify-center text-tertiary shadow-inner">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">forum</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">KingsChat SSO</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+                    Ministry-native 1-tap verification. Direct PCDL token syncing and verified media badge.
+                  </p>
+</div>
+</div>
+<div class="mt-space-xl pt-space-base flex flex-col gap-space-xs">
+<button class="w-full py-space-sm px-space-base rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-label-lg text-label-lg font-bold hover:brightness-110 transition-all flex items-center justify-center gap-space-xs shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+                  Continue with KingsChat
+                </button>
+<span class="text-center font-label-sm text-label-sm text-on-surface-variant/80">Instant profile &amp; sermon asset sync</span>
+</div>
+</div>
+<!-- Method 2: Email -->
+<div class="group flex flex-col justify-between bg-surface-container rounded-2xl p-space-lg hover:bg-surface-container-high transition-all shadow-sm hover:-translate-y-0.5 cursor-pointer" onclick="switchStep(2)">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container shadow-inner">
+<span class="material-symbols-outlined text-[26px]">alternate_email</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Creative Email</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+                    Use your ministry organization, studio, or personal Google/Proton address.
+                  </p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="bg-surface-container-lowest rounded-lg px-space-md py-space-xs text-on-surface-variant font-body-sm text-body-sm flex items-center justify-between">
+<span class="">creator@ministry.org</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">mail</span>
+</div>
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                    Magic sign-in link or traditional password
+                  </div>
+</div>
+</div>
+<div class="mt-space-xl pt-space-base">
+<button class="w-full py-space-sm px-space-base rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg font-semibold transition-all flex items-center justify-center gap-space-xs" type="button">
+                  Continue with Email
+                  <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Method 3: Phone Number -->
+<div class="group flex flex-col justify-between bg-surface-container rounded-2xl p-space-lg hover:bg-surface-container-high transition-all shadow-sm hover:-translate-y-0.5 cursor-pointer" onclick="switchStep(2)">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shadow-inner">
+<span class="material-symbols-outlined text-[26px]">phone_iphone</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mobile SMS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">
+                    Global coverage via instant SMS OTP. Recommended for fast mobile workflow editing.
+                  </p>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<span class="bg-surface-container-lowest px-2 py-1.5 rounded-lg text-on-surface font-label-sm text-label-sm font-medium">+234 / +1 / +44</span>
+<span class="bg-surface-container-lowest flex-1 px-2.5 py-1.5 rounded-lg text-on-surface-variant font-label-sm text-label-sm">803 000 0000</span>
+</div>
+</div>
+<div class="mt-space-xl pt-space-base">
+<button class="w-full py-space-sm px-space-base rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg font-semibold transition-all flex items-center justify-center gap-space-xs" type="button">
+                  Continue with Phone
+                  <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Studio Feature Ticker -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-lg bg-surface-container-lowest rounded-2xl p-space-lg">
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary-container text-[24px]">auto_videocam</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Pleroma AI Color Engine</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant luminescent grading matching sacred auditorium aesthetics.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary-container text-[24px]">cloud_sync</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">PCDL Cloud Drive</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct access to approved ministry scriptures, lower-thirds, and assets.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary-container text-[24px]">payments</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Espees &amp; Fiat Ready</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Monetize templates on the global creative marketplace seamlessly.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= STEP 2: CREDENTIALS ================= -->
+<div class="step-pane hidden flex flex-col gap-space-xl max-w-xl mx-auto" id="step-pane-2">
+<div class="text-center flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container">Security &amp; Access</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Create Studio Passcode</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Protect your raw project files, cloud exports, and digital rights with radiant encryption.
+            </p>
+</div>
+<form class="flex flex-col gap-space-base" onsubmit="event.preventDefault(); switchStep(3);">
+<!-- Email / Identifier Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between">
+<span class="">Account Identifier</span>
+<span class="text-primary-container">Verified via KingsChat ID</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">person</span>
+<input class="w-full h-11 bg-surface-container-lowest rounded-xl pl-10 pr-4 text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="signup-email-input" placeholder="you@example.com" type="text" value=""/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Studio Master Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">key</span>
+<input class="w-full h-11 bg-surface-container-lowest rounded-xl pl-10 pr-10 text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="pwd-input" type="password" value=""/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Password Strength Visual Meter -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Entropy &amp; Complexity:</span>
+<span class="text-primary-container font-semibold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">flare</span> Radiant Strong (98%)
+                </span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex gap-1">
+<div class="h-full w-1/4 bg-primary-container rounded-full"></div>
+<div class="h-full w-1/4 bg-primary-container rounded-full"></div>
+<div class="h-full w-1/4 bg-primary-container rounded-full"></div>
+<div class="h-full w-1/4 bg-primary-container rounded-full shadow-[0_0_8px_rgba(245,185,66,0.8)]"></div>
+</div>
+<div class="grid grid-cols-2 gap-y-1 pt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary-container"><span class="material-symbols-outlined text-[14px]">check</span> 12+ characters</span>
+<span class="flex items-center gap-1 text-primary-container"><span class="material-symbols-outlined text-[14px]">check</span> Numbers &amp; symbols</span>
+<span class="flex items-center gap-1 text-primary-container"><span class="material-symbols-outlined text-[14px]">check</span> Mixed casing</span>
+<span class="flex items-center gap-1 text-primary-container"><span class="material-symbols-outlined text-[14px]">check</span> Uncompromised</span>
+</div>
+</div>
+<!-- Two-Factor Checkbox -->
+<label class="flex items-start gap-space-sm bg-surface-container p-space-md rounded-xl cursor-pointer">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary-container accent-primary-container bg-surface-container-lowest" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Enable Multi-Device Biometric Authorization</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Require WebAuthn or KingsChat push prompt when exporting projects in 4K/8K.</span>
+</div>
+</label>
+<!-- Navigation Buttons -->
+<div class="flex items-center justify-between pt-space-md">
+<button class="px-space-lg py-space-sm rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-lg text-label-lg" onclick="switchStep(1)" type="button">
+                Back
+              </button>
+<button class="px-space-xl py-space-sm rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-md hover:brightness-110 flex items-center gap-space-xs" type="submit">
+                Continue to Profile
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- ================= STEP 3: CREATOR PROFILE ================= -->
+<div class="step-pane hidden flex flex-col gap-space-xl max-w-2xl mx-auto" id="step-pane-3">
+<div class="text-center flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container">Identity &amp; Attribution</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Set Up Creator Profile</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Your handle will be stamped on cinematic exports and community templates on PCDL Hub.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl items-center">
+<!-- Avatar Upload Area -->
+<div class="flex flex-col items-center text-center gap-space-sm">
+<div class="relative group cursor-pointer">
+<div class="w-32 h-32 rounded-full p-1 bg-gradient-to-tr from-primary-container via-secondary-container to-tertiary-container shadow-lg flex items-center justify-center">
+<div class="w-full h-full rounded-full bg-surface-container-lowest overflow-hidden flex items-center justify-center relative">
+<img class="w-full h-full object-cover" data-alt="Close-up creative portrait of a confident multimedia creator with dramatic cinematic golden rim lighting in a professional dark editing studio booth, warm amber highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXetyWW6pz3vKxVZmatBtFqtTdKfQEgYntrVNGzaZiBBfgGIaIbDI1scqFSm7HA8YS2p4PYDo3ce8f25l68d5T3SPPuFbkJkSFLpMX6Zwjvns62IFL1qhfzjoLXntfYvB5yH7mqhu40Al1Yv9eBSuGaxLOlzPw6AEpYBFER4GEd8iZZDqfegmvBRkclx0zJZ5bCACmkrRDr3rfwH9erwUIS4B-NsHGaOiOwccU-H3_h56iRZts-rLw"/>
+<div class="absolute inset-0 bg-background/60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary-container text-[28px]">photo_camera</span>
+<span class="font-label-sm text-label-sm text-on-surface">Replace</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-1 right-1 w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[18px]">add_a_photo</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Supports PNG, JPG, or SVG presets (Max 12MB)</span>
+</div>
+<!-- Profile Details Form -->
+<div class="md:col-span-2 flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Display Name / Ministry Title</label>
+<input class="w-full h-11 bg-surface-container-lowest rounded-xl px-space-base text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" id="signup-name-input" type="text" value="Pastor David Oyakhilome"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Studio Creative Handle</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-primary-container font-bold font-label-md text-label-md">@</span>
+<input class="w-full h-11 bg-surface-container-lowest rounded-xl pl-8 pr-28 text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" type="text" value="david_illuminates"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-primary-container bg-primary-container/10 px-2 py-0.5 rounded">Available</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">Primary Production Focus</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-space-xs px-space-sm rounded-lg bg-primary-container/15 text-primary-container font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">movie</span> Sunday Broadcasts
+                  </button>
+<button class="py-space-xs px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">music_note</span> Worship Visuals
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="flex items-center justify-between pt-space-base">
+<button class="px-space-lg py-space-sm rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-lg text-label-lg" onclick="switchStep(2)" type="button">
+              Back
+            </button>
+<button class="px-space-xl py-space-sm rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-md hover:brightness-110 flex items-center gap-space-xs" onclick="switchStep(4)" type="button">
+              Continue to Tier Selection
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- ================= STEP 4: TIER SELECTION ================= -->
+<div class="step-pane hidden flex flex-col gap-space-xl" id="step-pane-4">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-space-2xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-container">Select Your Illumination Level</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Choose Your Creative Engine Tier</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Every plan includes the Pleroma AI base color grading suite. Upgrade or downgrade at any time with Espees or cards.
+            </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Tier 1: Spark (Free / Default) -->
+<div class="tier-card relative rounded-2xl bg-surface-container p-space-lg flex flex-col justify-between hover:bg-surface-container-high transition-all shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<span class="bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm px-2.5 py-1 rounded-full font-semibold">
+                    Selected Default
+                  </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Spark Tier</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Essential creative suite for emerging ministers and solo video makers.</p>
+</div>
+<div class="flex items-baseline gap-1 py-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface">Free</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ forever</span>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+<li class="flex items-center gap-2 text-on-surface"><span class="material-symbols-outlined text-[16px] text-primary-container">check</span> 1080p 60fps Multi-track rendering</li>
+<li class="flex items-center gap-2 text-on-surface"><span class="material-symbols-outlined text-[16px] text-primary-container">check</span> 25 PCDL Ministry template imports</li>
+<li class="flex items-center gap-2 text-on-surface"><span class="material-symbols-outlined text-[16px] text-primary-container">check</span> Standard Pleroma AI LUT presets</li>
+<li class="flex items-center gap-2 text-on-surface-variant/70"><span class="material-symbols-outlined text-[16px]">remove</span> 4K Ultra HD Export</li>
+<li class="flex items-center gap-2 text-on-surface-variant/70"><span class="material-symbols-outlined text-[16px]">remove</span> Team cloud collaboration</li>
+</ul>
+</div>
+<div class="mt-space-xl pt-space-md">
+<button class="w-full py-space-sm px-space-base rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-bright transition-all" data-navigate="dashboard.html" type="button">
+                  Keep Spark Free
+                </button>
+</div>
+</div>
+<!-- Tier 2: Radiant (Most Popular) -->
+<div class="tier-card relative rounded-2xl bg-surface-container-high p-space-lg flex flex-col justify-between shadow-xl ring-1 ring-primary-container/40">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary-container to-secondary-container px-space-md py-0.5 rounded-full text-on-primary-container font-label-sm text-label-sm font-bold shadow-md uppercase tracking-wider">
+                Most Popular
+              </div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between pt-space-xs">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary-container shadow-inner">
+<span class="material-symbols-outlined text-[24px]">flare</span>
+</div>
+<span class="bg-primary-container/20 text-primary-container text-label-sm font-label-sm px-2.5 py-1 rounded-full font-bold">
+                    5 Espees / mo
+                  </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Radiant Studio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Full cinematic power with 4K output and neural auto-reframe for reels.</p>
+</div>
+<div class="flex items-baseline gap-1 py-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary-container">₦10,250</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface pt-space-xs">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span> Unlimited 4K 60FPS Pro Exports</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span> Unlimited PCDL Hub Asset Downloads</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span> Automated Scripture &amp; Lower-Third Engine</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span> Real-time AI Noise &amp; Vocal De-reverb</li>
+<li class="flex items-center gap-2 text-on-surface-variant/70"><span class="material-symbols-outlined text-[16px]">remove</span> Dedicated render cluster priority</li>
+</ul>
+</div>
+<div class="mt-space-xl pt-space-md">
+<button class="w-full py-space-sm px-space-base rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-label-lg text-label-lg font-bold hover:brightness-110 transition-all shadow-md" data-navigate="payment.html" type="button">
+                  Activate Radiant Plan
+                </button>
+</div>
+</div>
+<!-- Tier 3: Lambent Diamond (Ministry / Enterprise) -->
+<div class="tier-card relative rounded-2xl bg-surface-container p-space-lg flex flex-col justify-between hover:bg-surface-container-high transition-all shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/30 flex items-center justify-center text-tertiary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">diamond</span>
+</div>
+<span class="bg-tertiary-container/20 text-tertiary text-label-sm font-label-sm px-2.5 py-1 rounded-full font-bold">
+                    15 Espees / mo
+                  </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Lambent Diamond</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-seat broadcast suite for zonal ministry hubs and production centers.</p>
+</div>
+<div class="flex items-baseline gap-1 py-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface">₦30,750</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface pt-space-xs">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">diamond</span> 8K Full Master Rendering Pipeline</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">diamond</span> 10 Team Seats &amp; Collaborative Timeline</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">diamond</span> 500GB Fast Cloud Vault</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">diamond</span> Priority Render GPU Nodes</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">diamond</span> Custom Ministry Watermark Removal</li>
+</ul>
+</div>
+<div class="mt-space-xl pt-space-md">
+<button class="w-full py-space-sm px-space-base rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-lg text-label-lg font-semibold transition-all" onclick="window.location.href='mailto:support@photizostudio.app?subject=Lambent%20Diamond%20Enquiry'" type="button">
+                  Contact Zonal Sales
+                </button>
+</div>
+</div>
+</div>
+<!-- Bottom Action -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg">
+<button class="px-space-lg py-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg" onclick="switchStep(3)" type="button">
+              Back to Profile
+            </button>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-primary-container transition-colors" data-path="photo-editor" href="editor.html">
+<span class="">Skip for now, explore with Spark Free</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Trust Badges & Ministry Security Standards -->
+<div class="mt-space-xl grid grid-cols-1 sm:grid-cols-3 gap-space-base py-space-base px-space-lg bg-surface-container-lowest/70 rounded-2xl">
+<div class="flex items-center justify-center sm:justify-start gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-container text-[20px]">lock</span>
+<span class="font-label-sm text-label-sm">256-Bit Bank-Grade Project Encryption</span>
+</div>
+<div class="flex items-center justify-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified</span>
+<span class="font-label-sm text-label-sm">KingsChat Verified Authentication</span>
+</div>
+<div class="flex items-center justify-center sm:justify-end gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-container text-[20px]">credit_card_off</span>
+<span class="font-label-sm text-label-sm">No Card Required for Spark Access</span>
+</div>
+</div>
+<!-- Footer Sub-Bar with Language / Region Select -->
+<div class="mt-space-lg flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-space-md">
+<div class="flex items-center gap-space-base">
+<a class="hover:text-on-surface transition-colors" data-path="terms" href="terms.html">Terms of Ministry Service</a>
+<span class="">•</span>
+<a class="hover:text-on-surface transition-colors" data-path="privacy" href="privacy.html">Creator Privacy Code</a>
+<span class="">•</span>
+<a class="hover:text-on-surface transition-colors" data-path="licensing" href="licensing.html">Digital Rights &amp; Espees</a>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[16px]">language</span>
+<select class="bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-lg px-2 py-1 outline-none">
+<option>English (Global)</option>
+<option>French (Français)</option>
+<option>Spanish (Español)</option>
+<option>Portuguese (Português)</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Script for Tab / Step Navigation -->
+<script>
+    function switchStep(stepNumber) {
+      // Hide all panes
+      for (let i = 1; i <= 4; i++) {
+        const pane = document.getElementById('step-pane-' + i);
+        if (pane) {
+          if (i === stepNumber) {
+            pane.classList.remove('hidden');
+          } else {
+            pane.classList.add('hidden');
+          }
+        }
+      }
+
+      // Update stepper header styles
+      const navItems = document.querySelectorAll('.step-indicator-item');
+      navItems.forEach((item, index) => {
+        const stepIndex = index + 1;
+        const circle = item.querySelector('div:first-child');
+        const title = item.querySelector('span:first-child');
+        const sub = item.querySelector('span:last-child');
+
+        if (stepIndex === stepNumber) {
+          item.className = 'step-indicator-item flex items-center gap-space-sm p-space-xs rounded-xl bg-surface-container text-on-surface transition-all cursor-pointer';
+          circle.className = 'w-8 h-8 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg flex items-center justify-center font-bold shadow-md';
+          if (title) title.className = 'font-label-md text-label-md text-on-surface truncate font-semibold';
+          if (sub) {
+            sub.className = 'font-body-sm text-label-sm text-primary-container truncate font-medium';
+            sub.textContent = 'Active Step';
+          }
+        } else if (stepIndex < stepNumber) {
+          item.className = 'step-indicator-item flex items-center gap-space-sm p-space-xs rounded-xl text-on-surface hover:bg-surface-container/60 transition-all cursor-pointer';
+          circle.className = 'w-8 h-8 rounded-lg bg-primary-container/20 text-primary-container font-label-lg text-label-lg flex items-center justify-center font-bold';
+          circle.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+          if (title) title.className = 'font-label-md text-label-md text-on-surface truncate';
+          if (sub) {
+            sub.className = 'font-body-sm text-label-sm text-on-surface-variant truncate';
+            sub.textContent = 'Completed';
+          }
+        } else {
+          item.className = 'step-indicator-item flex items-center gap-space-sm p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container/60 transition-all cursor-pointer';
+          circle.className = 'w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center';
+          circle.textContent = stepIndex;
+          if (title) title.className = 'font-label-md text-label-md text-on-surface-variant truncate';
+          if (sub) {
+            sub.className = 'font-body-sm text-label-sm text-on-surface-variant/70 truncate';
+            sub.textContent = 'Pending';
+          }
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest relative"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter-desktop pt-space-4xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-2xl mb-space-3xl"><div class="lg:col-span-2 flex flex-col gap-space-base"><div class="flex items-center gap-space-md"><div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-container to-secondary-container flex items-center justify-center shadow-[0_0_12px_rgba(245,185,66,0.25)]"><span class="material-symbols-outlined text-on-primary-container text-headline-sm">flare</span></div><span class="font-headline-sm text-headline-sm text-on-surface">Photizo Studio</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Professional-grade visual suite designed to illuminate cinematic visions with AI radiance and precision color craft.</p><div class="flex items-center gap-space-md pt-space-xs"><a class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" href="#"><span class="material-symbols-outlined text-headline-sm">language</span></a><a class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" href="#"><span class="material-symbols-outlined text-headline-sm">share</span></a><a class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" href="#"><span class="material-symbols-outlined text-headline-sm">smart_display</span></a><a class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" href="#"><span class="material-symbols-outlined text-headline-sm">hub</span></a></div></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider">Products</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li class=""><a class="hover:text-on-surface transition-colors" data-path="photo-editor" href="editor.html">Photo Editor</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="video-editor" href="editor.html">Video Editor</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="pleroma-ai" href="editor.html">Pleroma AI</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="pcdl-hub" href="pcdl-hub.html">PCDL Hub</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="template-payouts" href="templates.html#payouts">Template Payouts</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="creator-fund" href="templates.html#payouts">Creator Fund</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider">Company</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li class=""><a class="hover:text-on-surface transition-colors" data-path="about" href="index.html#about">About Us</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="blog" href="blog.html">Blog &amp; Insights</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="careers" href="careers.html">Careers</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider">Legal</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li class=""><a class="hover:text-on-surface transition-colors" data-path="terms" href="terms.html">Terms &amp; Conditions</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="privacy" href="privacy.html">Privacy Policy</a></li><li class=""><a class="hover:text-on-surface transition-colors" data-path="licensing" href="licensing.html">Licensing Terms</a></li></ul></div></div><div class="pt-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Photizo Studio Inc. All rights reserved. Illuminate Every Frame.</p><div class="flex items-center gap-space-lg font-body-sm text-body-sm text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>Engine Status: Operational</span></div></div></div></footer>
+<script defer="" src="assets/site.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="assets/supabase-client.js"></script><script src="assets/auth.js"></script></body></html>
