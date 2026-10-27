@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Photizo Studio | Illuminate Every Frame</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#14122b;--panel:#1e1b3f;--text:#f7f3e8;--muted:#b9b4d9;--gold:#f5c85c;--line:#3a3668;--on-gold:#14122b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#faf6ea;--panel:#f0e9d2;--text:#1d1a3a;--muted:#5a557d;--gold:#b7791f;--line:#d9cfae;--on-gold:#fff}}
+:root[data-theme="dark"]{--bg:#14122b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.9rem,6vw,2.8rem);margin-bottom:16px}
+p{margin:0 0 14px;max-width:62ch}
+.muted{color:var(--muted)}
+.hero{padding:72px 0 80px;border:0;background:radial-gradient(60% 50% at 50% 38%,rgba(245,200,92,.28),transparent 70%)}
+.frame{position:relative;padding:44px 22px;margin:0 auto 32px;max-width:640px;text-align:center}
+.frame i{position:absolute;width:30px;height:30px;border:3px solid var(--gold)}
+.frame i:nth-child(1){top:0;left:0;border-right:0;border-bottom:0}
+.frame i:nth-child(2){top:0;right:0;border-left:0;border-bottom:0}
+.frame i:nth-child(3){bottom:0;left:0;border-right:0;border-top:0}
+.frame i:nth-child(4){bottom:0;right:0;border-left:0;border-top:0}
+.hero h1{font-size:clamp(2.6rem,11vw,5rem);font-weight:700}
+.hero .sub{margin:18px auto 0;font-size:1.1rem;color:var(--muted)}
+.hero .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid var(--gold)}
+.btn.main{background:var(--gold);color:var(--on-gold)}
+.rows>div{padding:20px 0;border-bottom:1px solid var(--line)}
+.rows h3{font-size:1.35rem;margin-bottom:6px}
+.rows p{margin:0}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.95rem}
+th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:Fraunces,Georgia,serif;font-size:1.05rem}
+.ask{font-family:Fraunces,Georgia,serif;font-size:clamp(3rem,13vw,5.5rem);color:var(--gold);line-height:1;margin:8px 0 6px}
+.bar{margin:18px 0}
+.bar div.t{display:flex;justify-content:space-between;gap:12px;font-weight:500}
+.bar div.b{height:10px;background:var(--panel);border-radius:5px;margin-top:6px;overflow:hidden}
+.bar div.b span{display:block;height:100%;background:var(--gold)}
+.note{font-size:.9rem;color:var(--muted)}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion:no-preference){.frame{animation:focus 1.4s ease-out both}@keyframes focus{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:none}}}
+
+.soon{display:inline-block;padding:4px 12px;border:1px solid var(--gold);color:var(--gold);border-radius:99px;font-size:.82rem;font-weight:700;margin-bottom:14px}
+.pw{position:relative;width:100%;padding-top:62.5%;border-radius:14px;overflow:hidden;background:#17171b;border:1px solid var(--line);margin-top:26px}
+#pro{position:absolute;left:0;top:0;width:960px;height:600px;transform-origin:0 0;background:#1b1b20;color:#c9c9d1;font:9px/1.2 "DM Sans",system-ui,sans-serif;display:grid;grid-template-rows:18px 292px 1fr;grid-template-columns:150px 1fr 1fr 150px;gap:2px}
+#pro .mb{grid-column:1/-1;background:#101014;display:flex;gap:14px;align-items:center;padding:0 8px}
+#pro .mb b{color:#e3b04b}
+#pro .pn{background:#222228;border:1px solid #2d2d35;display:flex;flex-direction:column;min-height:0}
+#pro .pt{background:#15151a;padding:3px 7px;font-size:8px;letter-spacing:.06em;color:#9a9aa6}
+#pro .mon{flex:1;margin:6px;background:#000;display:flex;align-items:center;justify-content:center;color:#e3b04b;font-size:44px;font-weight:200}
+#pro .tr{padding:4px 8px;display:flex;justify-content:space-between;color:#9a9aa6}
+#pro .tiles{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:6px}
+#pro .tile{height:34px;background:#2b2b33;border-radius:3px;display:flex;align-items:center;justify-content:center;color:#e3b04b;font-size:13px}
+#pro .mx{flex:1;display:flex;gap:4px;align-items:flex-end;padding:8px 10px}
+#pro .mx i{flex:1;background:linear-gradient(#e3b04b,#8a5f12);border-radius:1px}
+#pro .tl{grid-column:2/4;display:flex;flex-direction:column}
+#pro .rl{height:14px;background:#15151a;display:flex;justify-content:space-between;padding:2px 6px;color:#777}
+#pro .tk{position:relative;flex:1;border-top:1px solid #2d2d35;display:flex;align-items:center}
+#pro .tk span{width:30px;text-align:center;color:#888}
+#pro .clip{position:absolute;top:4px;bottom:4px;border-radius:2px;background:linear-gradient(#cc9a3c,#9c6f1d);color:#2b1c00;font-size:7px;padding:2px 4px;overflow:hidden}
+#pro .clip.g{background:#44444c;color:#aaa}
+#pro .wf{position:absolute;left:30px;right:0;top:3px;bottom:3px}
+#pro .ph{position:absolute;top:14px;bottom:0;left:38%;width:1px;background:#e5484d}
+#pro .row{display:flex;justify-content:space-between;padding:3px 8px;border-bottom:1px solid #2d2d35}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="frame"><i></i><i></i><i></i><i></i>
+<h1>Photizo Studio</h1>
+<p class="sub">Illuminate Every Frame. Photo and video editing for Gospel creators, with templates, an AI reviewer, and a library of teaching content.</p></div>
+<div class="ctas"><a class="btn main" href="#funding">See the funding plan</a><a class="btn" href="#contact">Partner with us</a></div>
+</div></header>
+
+<section id="about"><div class="wrap">
+<h2>One app for creating, learning, and earning</h2>
+<p class="muted">Photizo comes from the Greek <em>photizo</em>, "to give light." Ministries and creators get professional tools in one place, and get paid when others use their work.</p>
+<div class="rows">
+<div><h3>Editing suite</h3><p>Photo and video editing with every standard feature, plus logo design. Work auto-saves to Photizo Space, built-in storage.</p></div>
+<div><h3>Editable templates</h3><p>Start from ready-made designs. Creators can let others use their videos as templates and earn 5% to 15% each time.</p></div>
+<div><h3>Pleroma AI</h3><p>Reviews your photos and videos, suggests what to add or remove, and recommends scriptures that match your theme. It's a reviewer, not a chatbot.</p></div>
+<div><h3>Sophia Library</h3><p>Approved sermons, documentaries, and self-development videos. Content is uploaded only by the owner and approved Admins.</p></div>
+<div><h3>Safe community</h3><p>Comment and chat with per-comment visibility, no follow feature, and no screenshots or screen recording of reels.</p></div>
+</div></div></section>
+
+
+<section id="compose"><div class="wrap">
+<span class="soon">Coming soon</span>
+<h2>Create &amp; Compose</h2>
+<p class="muted">Import footage, drag in audio, or start from a template. A full editing workspace is on its way, with a multi-track timeline for video and standalone audio.</p>
+<div class="rows">
+<div><h3>Standalone audio editing</h3><p>Open a sermon recording, song, or voice note by itself. Trim, fade, and mix it on its own track.</p></div>
+<div><h3>Video and audio together</h3><p>Layer clips, music, and voice on one timeline with a live preview and an audio mixer.</p></div>
+</div>
+<div class="pw" id="pw" role="img" aria-label="Preview of the upcoming Photizo Studio workspace with media pool, source and program monitors, audio mixer, multi-track timeline, and properties panel"><div id="pro">
+<div class="mb"><b>Photizo Studio</b><span>File</span><span>Edit</span><span>View</span><span>Tools</span><span>Help</span></div>
+<div class="pn"><div class="pt">MEDIA POOL</div><div class="tiles"><div class="tile">&#128193;</div><div class="tile">&#9835;</div><div class="tile">T</div><div class="tile">&#9638;</div></div><div class="tiles"><div class="tile" style="background:#3a3a44"></div><div class="tile" style="background:#4a3b1a"></div></div></div>
+<div class="pn"><div class="pt">SOURCE</div><div class="mon">+</div><div class="tr"><span>00:00:00:00</span><span>&#9664;&#9664; &#9654; &#9654;&#9654;</span></div></div>
+<div class="pn"><div class="pt">PROGRAM</div><div class="mon">+</div><div class="tr"><span>00:12:48:10</span><span>&#9664;&#9664; &#9654; &#9654;&#9654;</span></div></div>
+<div class="pn"><div class="pt">AUDIO MIXER</div><div class="mx" id="mx"></div></div>
+<div class="pn"><div class="pt">PROJECT BIN</div><div class="tiles"><div class="tile" style="background:#111"></div><div class="tile" style="background:#4a3b1a"></div><div class="tile">&#8644;</div><div class="tile" style="background:#2b2b33"></div><div class="tile" style="grid-column:1/-1">+</div></div></div>
+<div class="pn tl"><div class="pt">TIMELINE</div><div class="rl"><span>00:12:00</span><span>00:12:30</span><span>00:13:00</span><span>00:13:30</span><span>00:14:00</span></div>
+<div class="tk"><span>V2</span><div class="clip" style="left:34%;width:22%">Intro title</div></div>
+<div class="tk"><span>V1</span><div class="clip" style="left:30px;width:36%">Opening scene</div><div class="clip" style="left:calc(30px + 37%);width:30%">Choir wide shot</div><div class="clip g" style="left:calc(30px + 68%);width:20%">Outro</div></div>
+<div class="tk"><span>A1</span><div class="wf" data-w="1"></div></div>
+<div class="tk"><span>A2</span><div class="wf" data-w="2"></div></div>
+<div class="ph"></div></div>
+<div class="pn"><div class="pt">PROPERTIES</div><div class="row"><span>Position</span><span>0, 0</span></div><div class="row"><span>Scale</span><span>100%</span></div><div class="row"><span>Opacity</span><span>100%</span></div><div class="row"><span>Volume</span><span>0 dB</span></div><div class="row"><span>Fade in</span><span>0.5 s</span></div></div>
+</div></div>
+</div></section>
+<script>
+(function(){const mx=document.getElementById('mx');[70,85,55,90,65,80,45,75].forEach(h=>{const i=document.createElement('i');i.style.height=h+'%';mx.append(i)});
+document.querySelectorAll('#pro .wf').forEach(w=>{let s=+w.dataset.w*7,p='';for(let i=0;i<150;i++){s=(s*9301+49297)%233280;const a=6+(s/233280)*(i%30<6?10:20);p+=`M${i*4+2} ${25-a}V${25+a}`}
+w.innerHTML=`<svg viewBox="0 0 600 50" preserveAspectRatio="none" width="100%" height="100%"><path d="${p}" stroke="#8d8d98" stroke-width="2" fill="none"/></svg>`});
+const pw=document.getElementById('pw'),pro=document.getElementById('pro'),fit=()=>{pro.style.transform='scale('+pw.clientWidth/960+')'};fit();addEventListener('resize',fit)})();
+</script>
+
+<section id="plans"><div class="wrap">
+<h2>Three plans</h2>
+<div class="scroll"><table>
+<tr><th></th><th>Spark (free)</th><th>Radiant<br>5 Espees, ₦10,250</th><th>Lambent Diamond<br>15 Espees, ₦30,750</th></tr>
+<tr><td>Pleroma AI</td><td>2 uses a day</td><td>10 uses a day</td><td>Unlimited</td></tr>
+<tr><td>Ads</td><td>On templates and downloads</td><td>None on templates and downloads</td><td>None anywhere</td></tr>
+<tr><td>Sophia Library</td><td>Not included</td><td>Included</td><td>Included</td></tr>
+<tr><td>Creator payout</td><td>5%</td><td>10%</td><td>15%</td></tr>
+<tr><td>Storage</td><td>Standard</td><td>Standard</td><td>Unlimited, 600GB fair use</td></tr>
+<tr><td>Badge</td><td>None</td><td>Glow star</td><td>Diamond</td></tr>
+</table></div></div></section>
+
+<section id="funding"><div class="wrap">
+<h2>The funding plan</h2>
+<p class="muted">We're a startup. This site shows funders what Photizo will look like. Your support builds the app itself.</p>
+<div class="ask">$20,000</div>
+<p>Seed funding to build and launch the first version of Photizo Studio. Here's where it goes:</p>
+<div class="bar"><div class="t"><span>Build the app (design, development, testing)</span><span>40%</span></div><div class="b"><span style="width:40%"></span></div></div>
+<div class="bar"><div class="t"><span>Cloud, storage, and AI running costs</span><span>20%</span></div><div class="b"><span style="width:20%"></span></div></div>
+<div class="bar"><div class="t"><span>Content and creator onboarding</span><span>15%</span></div><div class="b"><span style="width:15%"></span></div></div>
+<div class="bar"><div class="t"><span>Launch and community growth</span><span>15%</span></div><div class="b"><span style="width:15%"></span></div></div>
+<div class="bar"><div class="t"><span>Legal, terms, and operations</span><span>10%</span></div><div class="b"><span style="width:10%"></span></div></div>
+<p class="note">Proposed figures, open to discussion with partners.</p>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Join Photizo early</h2>
+<p>We're looking for funders, creators and content partners, early testers, and technical mentors. Tell us how you'd like to help.</p>
+<p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn main" href="mailto:ejisalem6@gmail.com?subject=Photizo%20Studio%20early%20access&body=Hi%2C%20I%27d%20like%20early%20access%20to%20Photizo%20Studio.%0AName%3A%0AI%20am%20a%3A%20(creator%20%2F%20funder%20%2F%20partner%20%2F%20tester)">Get early access</a><a class="btn" href="mailto:ejisalem6@gmail.com?subject=Photizo%20Studio%20partnership">Partner with us</a></p>
+</div></section>
+
+<footer><div class="wrap">Photizo Studio. Illuminate Every Frame.</div></footer>
+</body>
+</html>
